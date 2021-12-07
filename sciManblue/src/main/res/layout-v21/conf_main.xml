@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+    <!--
+    <ImageButton
+        android:id="@+id/fab_image_button"
+        android:layout_width="@dimen/fab_button_diameter"
+        android:layout_height="@dimen/fab_button_diameter"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/fab_button_margin_bottom"
+        android:layout_marginRight="@dimen/fab_button_margin_right"
+        android:background="@drawable/oval_ripple"
+        android:src="@drawable/fab_ic_add"
+        android:tint="@android:color/white"
+        android:elevation="@dimen/elevation_low"
+        android:stateListAnimator="@anim/button_elevation"/>-->
+
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        fab:fab_addButtonColorNormal="@color/accent"
+        fab:fab_addButtonColorPressed="@color/accentLight"
+        fab:fab_addButtonPlusIconColor="@color/secondary"
+        fab:fab_labelStyle="@style/menu_labels_style"
+        android:layout_marginBottom="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_online_rand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_size="mini"
+            fab:fab_icon="@drawable/web"
+            fab:fab_colorNormal="@color/accent"
+            fab:fab_title="Random online"
+            fab:fab_colorPressed="@color/accentLight"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_size="mini"
+            fab:fab_icon="@drawable/web"
+            fab:fab_colorNormal="@color/accent"
+            fab:fab_title="Online"
+            fab:fab_colorPressed="@color/accentLight"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_custom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_size="mini"
+            fab:fab_icon="@drawable/pencil"
+            fab:fab_colorNormal="@color/accent"
+            fab:fab_title="Custom"
+            fab:fab_colorPressed="@color/accentLight"/>
+
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+
+
+
+
+
+</RelativeLayout>

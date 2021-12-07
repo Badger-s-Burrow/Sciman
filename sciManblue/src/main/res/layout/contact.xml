@@ -1,0 +1,33 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/widget55"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:clickable="true"
+	android:orientation="vertical"
+	android:padding="5dp"
+	android:layout_x="201dp"
+	android:layout_y="50dp">
+
+	<QuickContactBadge
+	    android:id="@+id/quickContactBadge"
+	    android:clickable="true"
+	    android:background="@android:drawable/list_selector_background"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_centerVertical="true"
+	    android:layout_marginLeft="5dp" 
+	    android:src="@android:drawable/ic_menu_save"/>
+	<TextView
+		android:id="@+id/contact_name"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="TextView"
+		android:layout_toRightOf="@+id/quickContactBadge"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="10dp" 
+		android:textColorHighlight="#656565"
+		android:singleLine="true"
+		android:textAppearance="?android:attr/textAppearanceMedium"/>
+</RelativeLayout>

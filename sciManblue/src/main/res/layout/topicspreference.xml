@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NewConfActivity" >
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        class="test.androidbib$VerticalScrollView"
+        android:fillViewport="true" >
+
+        <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     >
+     	<LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:id="@+id/ll_header">
+            
+            </LinearLayout>
+            
+
+            <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:gravity="center_vertical"
+    android:paddingRight="?android:attr/scrollbarSize">
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="6dip"
+        android:layout_marginTop="6dip"
+        android:layout_marginBottom="6dip"
+        android:layout_weight="1">
+    
+        <TextView android:id="@+id/topics_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/custompref_topics"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+            
+        
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topics_title"
+            	android:layout_alignLeft="@+id/topics_title"             	 
+                android:orientation="horizontal">
+                <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content" 	                 
+	                android:orientation="vertical">
+                    
+                    <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                    <LinearLayout
+                        android:id="@+id/ll_topics"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="15dip"
+		                android:paddingBottom="6dip"	               
+		                android:orientation="vertical">
+                
+               		</LinearLayout>
+               		</RelativeLayout>
+                
+                        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                
+                <EditText
+                    android:id="@+id/ed_topics"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/iv_addtopic"
+                    android:hint="@string/ncf_topics_hint"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true" >
+
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/iv_addtopic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:background="@android:drawable/list_selector_background"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"                    
+                    android:src="@drawable/add_black" />
+
+            		</RelativeLayout>                        
+                </LinearLayout>
+            </LinearLayout>
+    	</RelativeLayout>
+   	</LinearLayout>
+
+            
+            
+        
+ 	<View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/transgrey" />           
+
+
+             <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/bt_ok"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+        		android:layout_marginRight="6dip"
+        		android:layout_marginTop="6dip"
+                android:text="@string/nb_ok" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

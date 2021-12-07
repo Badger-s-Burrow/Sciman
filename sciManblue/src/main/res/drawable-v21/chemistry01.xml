@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="128dp"
+    android:height="128dp"
+    android:viewportWidth="128"
+    android:viewportHeight="128">
+
+    <group
+            android:translateY="-924.36218">
+        <path
+            android:strokeColor="#800080"
+            android:strokeWidth="3.31843567"
+            android:strokeLineCap="square"
+            android:pathData="M 84.937266,51.942909 C 101.01003,69.012437 100.202,95.879575
+83.132469,111.95234 66.062941,128.02511 39.195803,127.21707 23.123037,110.14754
+7.0502706,93.078017 7.8583057,66.210879 24.927834,50.138113 33.816129,41.768843
+45.87732,37.631261 58.03143,38.781952" />
+        <path
+            android:strokeColor="#800080"
+            android:strokeWidth="3"
+            android:strokeLineCap="square"
+            android:pathData="M 60.58056,962.82421 L 71.978859,934.70736 100.2939,950.08103
+84.393091,974.12417" />
+        <path
+            android:strokeColor="#800080"
+            android:strokeWidth="3"
+            android:pathData="M 17.780144,1000.5845 c 6.682804,6.4282 15.138601,9.3751 26.167506,7.2694
+13.601405,-2.7486 19.614054,-0.028 28.28917,5.02 5.151935,2.8999
+10.162637,6.0752 20.376131,-0.8903" />
+        <path
+            android:strokeColor="#800080"
+            android:strokeWidth="2.72041655"
+            android:strokeLineCap="square"
+            android:pathData="M 63.24958,73.648239 a 4.1809044,4.1809044 0 1 1 -8.361808,0 4.1809044,4.1809044
+0 1 1 8.361808,0 z" />
+        <path
+            android:strokeColor="#800080"
+            android:strokeWidth="3.62007284"
+            android:strokeLineCap="square"
+            android:pathData="M 63.24958,73.648239 a 4.1809044,4.1809044 0 1 1 -8.361808,0 4.1809044,4.1809044
+0 1 1 8.361808,0 z" />
+        <path
+            android:strokeColor="#800080"
+            android:strokeWidth="4.56325579"
+            android:strokeLineCap="square"
+            android:pathData="M 63.24958,73.648239 a 4.1809044,4.1809044 0 1 1 -8.361808,0 4.1809044,4.1809044
+0 1 1 8.361808,0 z" />
+    </group>
+</vector>

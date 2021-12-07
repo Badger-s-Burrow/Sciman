@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+    <group android:checkableBehavior="single">
+        <group>
+            <item
+                android:id="@+id/nav_sciman"
+                android:checked="false"
+                android:icon="@drawable/book"
+                android:title="@string/app_name" />
+
+            <item
+                android:id="@+id/nav_news"
+                android:checked="false"
+                android:icon="@drawable/newspaper"
+                android:title="@string/main_nav_news" />
+
+            <item
+                android:id="@+id/nav_profile"
+                android:checked="false"
+                android:icon="@drawable/account"
+                android:title="@string/main_nav_profile" />
+
+            <item
+                android:id="@+id/nav_contacts"
+                android:checked="false"
+                android:icon="@drawable/account_multiple"
+                android:title="@string/main_nav_contacts" />
+
+        </group>
+        <group android:id="@+id/main_nav_group_about">
+            <item
+                android:id="@+id/nav_settings"
+                android:checked="false"
+                android:icon="@drawable/settings"
+                android:title="@string/main_menu_preferences" />
+
+            <item
+                android:id="@+id/nav_info"
+                android:checked="false"
+                android:icon="@drawable/information"
+                android:title="@string/main_menu_about" />
+
+        </group>
+    </group>
+</menu>

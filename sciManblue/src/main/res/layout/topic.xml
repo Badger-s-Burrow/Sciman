@@ -1,0 +1,36 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/rl_topic"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+	
+	<TextView
+		android:id="@+id/tv_topic"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_marginBottom="5dp"
+		android:layout_marginLeft="6dp"
+		android:text="TextView"
+		android:singleLine="true"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_centerVertical="true"
+		android:textColorHighlight="#656565">
+	</TextView>
+	<de.badgersburrow.sciman.library.PictureLink
+		android:id="@+id/iv_delete"
+		android:src="@drawable/minus_black"		
+		android:layout_centerVertical="true"
+		android:layout_alignParentRight="true"
+		android:background="@android:drawable/list_selector_background"
+		android:clickable="true"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+
+	
+	<View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/tv_topic"
+        android:background="@color/transgrey" />	
+</RelativeLayout>

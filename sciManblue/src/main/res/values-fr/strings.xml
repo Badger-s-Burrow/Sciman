@@ -1,0 +1,158 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">&quot;SciMan&quot;</string>
+   
+    <string name="header_author">"Auteur"</string>
+    <string name="header_title">"Titre"</string>
+    <string name="header_year">"Année"</string>
+    <string name="header_journal">"Journal"</string>
+    <string name="header_bibtexkey">"Bibtexkey"</string>
+    <string name="search_noitem">The search did not return any items!\nPlease be aware, that the search is case sensitive.</string>
+    <string name="emptyfield">&quot;                                                                        &quot;</string>
+    <string name="max_items_warn">Maximum number of items reached!</string>
+    
+    <string name="sortdrawer_title">&quot;Sortir&quot;</string>
+    
+    <string name="dv_author">"Auteur : "</string>
+    <string name="dv_title">"Titre : "</string>
+    <string name="dv_year">"Année "</string>
+    <string name="dv_journal">"Journal: "</string>
+    <string name="dv_publisher">"Editeur : "</string>
+    <string name="dv_abstract">"Résumé:  "</string>
+    <string name="dv_bibtexkey">"Bibtexkey:  "</string>
+    <string name="dv_file">"Nom de fichier :  "</string>
+    <string name="dv_doi">"Doi:  "</string>
+    <string name="bt_viewpdf">"Voir le pdf"</string>
+    <string name="dv_nopdfapp">"Pas d'application disponible pour visualiser le PDF"</string>
+    <string name="dv_nopdf">"Impossible de trouver le fichier PDF"</string>
+    
+    <string name="nb_header">"Charger un nouveau fichier Bibtex "</string>
+    <string name="nb_name">"Veuillez saisir un nom "</string>
+    <string name="nb_name_dropb">"Entrez un nom de dossier / DropBox"</string>
+    <string name="nb_source">"Choisissez une source "</string>
+    <string name="nb_file">"Entrez l'emplacement du fichier "</string>
+    <string name="nb_file_dropb">"Entrez le fichier bibtex"</string>
+    <string name="nb_comment">"Commentaires "</string>
+    <string name="nb_pdfdirectory">"Répertoire pdf "</string>
+    <string name="nb_pdfdirectory_dropb">"\"Entrez un répertoire PDF local\""</string>
+    <string name="nb_name_hint">"Nom "</string>
+    <string name="nb_file_hint">"Emplacement du fichier (ex : \"/ abc.bib\")"</string>
+    <string name="nb_file_hint_dropb">"ex : \\"abc.bib \\""</string>
+    <string name="nb_comment_hint">"Commentaires "</string>
+    <string name="nb_pdfdirectory_hint">"Répertoire pdf "</string>
+    <string name="nb_extern">&quot;Select saving device&quot;</string>
+    <string name="nb_extern_text">&quot;Select to enable that all paths start at the mount point of the external device f.e. sdcard&quot;</string>
+    <string name="nb_gallery">"Image de fond"</string>
+    <string name="nb_ok">"   OK   "</string>
+    <string name="nb_local">"local"</string>
+    <string name="nb_dropbox">&quot;Dropbox&quot;</string>
+    <string name="nb_localapp">&quot;local, sync with installed app&quot;</string>
+    <string name="nb_sourcemanualApp">"application: "</string>
+    <string name="nb_sourcemanualApp_None">"Cliquez pour choisir"</string>
+    <string name="sourcenotchosen">"Vous devez choisir une source!"</string>
+    <string name="nb_loadingtit">&quot;Loading&#8230;&quot;</string>
+    <string name="nb_loadinginfo">&quot;Loading list of installed applications, please wait&#8230;&quot;</string>
+        
+    <string name="search_label">"Recherche"</string>
+    <string name="search_hint">"\"Rechercher dans your_application_name\""</string>
+    <string name="search_message">"\"Insérez le texte recherché:\""</string>
+    
+    <string name="ok">"OK"</string>
+    <string name="cancel">"Annuler"</string>
+    <string name="fnf">"Fichier introuvable"</string>
+    <string name="alert">"Alerte"</string>
+    <string name="none">"Aucun"</string>
+        
+    <string name="eb_header">"Modifier la bibliographie"</string>
+    <string name="eb_backp_warn1">"Image de fond pour "</string>
+    <string name="eb_backp_warn2">" n'est pas disponible!"</string>
+    <string name="eb_select_pic">"Sélectionnez une image"</string>
+    <string name="eb_deselect_pic">"Cliquer longtemps pour désélectionner l'image personnalisée"</string>    
+    
+    <string name="main_bib_addfirst">"Ajouter une nouvelle bibliographie"</string>
+    <string name="main_bib_hint">"Pour ajouter un nouveau fichier bibtex: \n Menu -&gt; Nouveau -&gt; Remplir le formulaire"</string>
+    <string name="main_bib_header">" Vos bibliographies:"</string>
+    <string name="main_menu_new">"Nouveau"</string>
+    <string name="main_menu_deleteall">"Tout supprimer"</string>
+    <string name="main_menu_preferences">"Préférences"</string>
+    <string name="main_menu_about">"Info / À propos"</string>
+    <string name="main_delete">"Supprimer"</string>
+    <string name="max_bibs_warn">Maximum number of bibliographies reached!</string>
+    
+    <string name="app_not_found">"L'application spécifiée est introuvable!"</string>
+    
+    <string name="main_deletemessg">"Souhaitez vous supprimer toutes vos bibliographies?"</string>
+    
+    <string name="about_homepage">"site Web"</string>
+    <string name="about_main1">&quot;Cette application est destinée à parcourir vos fichiers bibtex créés avec le logiciel libre Jabref (la modification de ces fichiers n'est cependant pas encore disponible à l'heure actuelle). \ R \ n Vous pouvez également fournir et accéder directement aux fichiers pdf correspondants. \ NIl est aussi possible de gérer plusieurs bibliographies à la fois, tout en leur donnant votre style personnel (utiliser des écrans de fonds prédéfinis ou bien créer le votre). Des exemples ou drafts sont disponibles sur notre &quot;</string>
+    <string name="about_main2">&quot;. \N Vous pouvez effectuer des recherches et tris pour visualiser votre bibliographie comme bon vous semble. \ NCette application a été testé sur plusieurs smartphones et tablettes et fonctionne très bien sur Android 2.2 et versions ultérieures. \ n \n La synchronisation via svn, git, cloud, etc. sera implémentée dans les versions à venir. \ nPour des demandes d'options en particulier ou rapport de bugs, merci de visiter notre site Web ou envoyez un mail à \ n\ n J'espère que vous apprécierez cette application et la trouverez utile pour votre recherche quotidienne.&quot;</string>
+    <string name="about_disc">"Disclaimer: Je ne suis affilié ni à Jabref ni à un Journal \ nCette application est développée et maintenue par Johannes Reim.."</string>
+    
+    <string name="mcm_edititem">"Modifier"</string>
+    <string name="mcm_deleteitem">"Supprimer"</string>
+    <string name="mcm_syncbibtex">"Sync: Bibfile"</string>
+    <string name="mcm_syncfull">"Sync: Full"</string>
+    <string name="mcm_unlink">"Sync: Supprimer le lien/Dissocier"</string>
+    <string name="mcm_syncmanualapp">"Sync "</string>
+    
+    <string name="pref_general">General</string>
+    <string name="pref_language">Choose language</string>
+    <string name="pref_language_sum">Changes the localization for this app.</string>
+    <string name="pref_language_warn">&quot;Please restart app to complete localization change&quot;</string>
+    <string name="pref_systemapps">Hide system apps</string>
+    <string name="pref_systemapps_sum">Select to hide the preinstalled system apps from the applist for syncing.</string>
+    <string name="pref_graphics">"Graphiques"</string>
+    <string name="pref_splash">"Ecran d'accueil actif"</string>
+    <string name="pref_splash_sum">"Sélectionner pour activer l'écran d'accueil au démarrage de l'application"</string>
+    <string name="pref_backpic">"Images de fond actives"</string>
+    <string name="pref_backpic_sum">"Sélectionner pour activer les images de fond pour les différentes bibliographies."</string>
+    <string name="pref_colortheme">"Choisissez un thème de couleur"</string>
+    <string name="pref_colortheme_sum">"Thème de couleur global."</string>
+    <string name="pref_highrows">"Surlignement actif"</string>
+    <string name="pref_highrows_sum">"Sélectionner pour autoriser l'utilisation de différentes couleurs pour chaque ligne lors de la visualisation de la bibliographie."</string>
+    <string name="pref_bibview">"Visualisation de la Bibliographie"</string>
+    <string name="pref_textsize">"Taille du texte automatique"</string>
+    <string name="pref_textsize_sum">"Sélectionner pour activer l'ajustement automatique de la taille du texte."</string>
+    <string name="pref_textsizeman">"Ajuster la taille du texte"</string>
+    <string name="pref_textsizeman_sum">"pour tout le texte lors de la visualisation de la bibliographique"</string>
+    <string name="pref_textsizecurrent">&quot;current text size: &quot;</string>
+    <string name="pref_headertextsize">&quot;Set text size for header&quot;</string>
+    <string name="pref_headertextsize_sum">&quot;Header text size is larger by the selected amount&quot;</string>  
+    <string name="pref_sortsearch">"Enregistrer, trier et rechercher"</string>
+    <string name="pref_sortsearch_sum">"Sélectionner pour enregistrer le tri et la recherche actuels."</string>
+    <string name="pref_bibwidth">&quot;Choose view width&quot;</string>
+    <string name="pref_bibwidth_sum">&quot;Change how much the view width should extend in relation to the display width.&quot;</string>
+    <string name="pref_detailview">&quot;Detailed view&quot;</string>
+    <string name="pref_pdffile">"Voir le fichier pdf"</string>
+    <string name="pref_pdffile_sum">"Sélectionner pour afficher le nom des fichiers pdf dans la vue détaillée."</string>
+    <string name="pref_doilink">"Voir le lien doi"</string>
+    <string name="pref_doilink_sum">"Sélectionner pour afficher le lien doi dans la vue détaillée."</string>
+
+    <string name="dropb_notlinked">"Ce Bib n'est pas relié à Dropbox!"</string>
+    <string name="dropb_status_linked">"Statut: lien actif"</string>
+    <string name="dropb_status_unlinked">"Statut: lien inactif"</string>
+    <string name="dropb_error_appkey">"L'application ou la clé secrète sont corrompues. Merci de rapporter ce bug sur le site!"</string>
+    <string name="dropb_error_authen">"N'a pas pu s'authentifier auprès de Dropbox:"</string>
+    <string name="dropb_downloading">"Téléchargement en cours..."</string>
+    <string name="dropb_collfiles">"collecte de fichiers en cours"</string>
+    <string name="dropb_error_canceled">"Annulé"</string>
+    <string name="dropb_error_notdir">" n'est pas un répertoire. "</string>
+    <string name="dropb_error_dirempty">"Le répertoire Dropbox est vide."</string>
+    <string name="dropb_error_uptodate">"Pas de fichiers modifiés ou nouveaux dans ce répertoire"</string>
+    <string name="dropb_error_dirnotvalid">"S'il-vous-plaît entrer un répertoire local valide commençant par \'/\'"</string>
+    <string name="dropb_error_couldnotcreate">"Echec de la création d'un fichier local pour stocker le fichier actuel"</string>
+    <string name="dropb_error_downcanc">"Téléchargement annulé"</string>
+    <string name="dropb_error_foldercreated">"Le dossier a été créé, vous pouvez ajouter les fichier pdfs et bibtex."</string>
+    <string name="dropb_error_foldernotcreated1">"Dossier"</string>
+    <string name="dropb_error_foldernotcreated2">"N'a pas pu être créé : s'il-vous-plaît créer manuellement dans appfolder."</string>
+    <string name="dropb_error_network">"Erreur réseau. Essayez à nouveau."</string>
+    <string name="dropb_error_dropbox">"Erreur Dropbox. Essayez à nouveau."</string>
+    <string name="dropb_error_unkown">"Erreur inconnue. Essayez à nouveau."</string>
+    <string name="dropb_updated">"Fichiers de la bibliothèque mis à jour"</string>
+    <string name="dropb_downloadingbibtex">"Téléchargement du fichier Bibtex"</string>
+    <string name="dropb_error_nobibindir1">"Pas de fichier Bibtex"</string>
+    <string name="dropb_error_nobibindir2">"dans le répertoire"</string>
+    <string name="dropb_error_nobibmod">"Pas de fichier Bibtex modifié ou nouveau dans ce répertoire."</string>
+    <string name="dropb_bibupdated">"Mise à jour du fichier Bibtex effectuée"</string>
+	
+</resources>

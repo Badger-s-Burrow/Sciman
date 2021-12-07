@@ -1,0 +1,72 @@
+<resources>
+
+    <!--
+       <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
+       <item name="android:colorPrimary">@color/primary</item>
+       <item name="android:colorPrimaryDark">@color/primaryDark</item>
+       <item name="android:navigationBarColor">@color/primary</item>
+       <item name="android:colorAccent">@color/secondary</item>
+       <item name="android:textColorPrimary">@color/secondary</item>
+       <item name="android:colorControlHighlight">@color/accent</item>
+       <item name="android:statusBarColor">@android:color/transparent</item>
+       <item name="accent">@color/accent</item>
+   </style>
+
+   <style name="AppTheme" parent="Base.AppTheme">
+   </style>
+
+   <style name="Base.AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+       <item name="colorPrimary">#673AB7</item>
+       <item name="colorPrimaryDark">#512DA8</item>
+       <item name="colorAccent">#00BCD4</item>
+
+   </style>
+   -->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:colorPrimaryDark">@color/primaryDark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/primaryDark</item>
+        <!-- Customize your theme here. -->
+
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+
+    </style>
+
+    <!-- ToolBar -->
+    <style name="ThemeToolbar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@color/secondary</item>
+        <item name="android:textColorSecondary">@color/secondaryLight</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <!--
+        <item name="actionOverflowButtonStyle">@style/ActionButtonOverflowStyle</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        -->
+
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+
+        <item name="android:windowBackground">@color/primary</item>
+
+        <item name="colorControlNormal">   @color/secondary</item>
+        <item name="colorControlActivated">@color/secondary</item>
+        <item name="colorControlHighlight">@color/secondary</item>
+        <item name="android:textColorHint">@color/secondary</item>
+
+        <item name="colorButtonNormal">@color/primaryDark</item>
+        <item name="android:colorButtonNormal">@color/primaryDark</item>
+    </style>
+
+</resources>

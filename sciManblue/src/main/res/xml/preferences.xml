@@ -1,0 +1,86 @@
+<PreferenceScreen 
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:sciman="http://schemas.android.com/apk/res/de.badgersburrow.sciman">
+    <PreferenceCategory
+        android:key="catGeneral"
+        android:title="@string/pref_general">
+        <PreferenceScreen android:key="prefscreen_folder"
+            android:title="@string/pref_screen_folder"
+            android:summary="@string/pref_screen_folder_sum">
+            <intent android:action="EditFolderPreferencesActivity"/>
+        </PreferenceScreen>
+        <ListPreference 
+            android:entries="@array/pref_language_entries" 
+            android:title="@string/pref_language" 
+            android:key="pref_language" 
+            android:entryValues="@array/pref_language_values" 
+            android:summary="@string/pref_language_sum" 
+            />
+        <PreferenceScreen android:key="prefscreen_topics"
+            android:title="@string/pref_screen_topics"
+            android:summary="@string/pref_screen_topics_sum">
+            <intent android:action="EditTopicsPreferencesActivity"/>
+        </PreferenceScreen>
+        <CheckBoxPreference
+            android:id="@+id/isHideSystemappsEnabled"
+            android:key="isHideSystemappsEnabled"
+            android:title="@string/pref_systemapps"
+            android:summary="@string/pref_systemapps_sum"
+            android:defaultValue="true"/>
+     </PreferenceCategory>
+        
+     <PreferenceCategory
+        android:key="catGraphics"
+        android:title="@string/pref_graphics">
+        <CheckBoxPreference
+            android:id="@+id/isSplashEnabled"
+            android:key="isSplashEnabled"
+            android:title="@string/pref_splash"
+            android:summary="@string/pref_splash_sum"
+            android:defaultValue="true"/>
+        
+        <CheckBoxPreference
+            android:id="@+id/isPictsEnabled"
+            android:key="isPictsEnabled"
+            android:title="@string/pref_backpic"
+            android:summary="@string/pref_backpic_sum"
+            android:defaultValue="true"/>
+        <ListPreference 
+            android:entries="@array/pref_color_theme_entries" 
+            android:title="@string/pref_colortheme" 
+            android:key="pref_color_theme_entries" 
+            android:entryValues="@array/pref_color_theme_values" 
+            android:summary="@string/pref_colortheme_sum" 
+            android:defaultValue="Black" />
+        
+
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:key="catTabs"
+        android:title="@string/pref_tabs">
+        <PreferenceScreen android:key="prefscreen_bib"
+            android:title="@string/pref_screen_bib"
+            android:summary="@string/pref_screen_bib_sum">
+            <intent android:action="EditPreferencesBibActivity"/>
+                    
+        </PreferenceScreen>        
+        <PreferenceScreen android:key="prefscreen_conf"
+            android:title="@string/pref_screen_conf"
+            android:summary="@string/pref_screen_conf_sum">
+            <intent android:action="EditPreferencesConfActivity"/>
+            
+        </PreferenceScreen>
+        <PreferenceScreen android:key="prefscreen_my"
+            android:title="@string/pref_screen_my"
+            android:summary="@string/pref_screen_my_sum">
+                
+        </PreferenceScreen>
+    </PreferenceCategory>
+    
+
+    
+    
+    
+    
+</PreferenceScreen>

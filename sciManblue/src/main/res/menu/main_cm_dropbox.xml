@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/EditItem" 
+        android:title="@string/mcm_edititem"
+        ></item>
+    <item android:id="@+id/DeleteItem" 
+        android:title="@string/mcm_deleteitem"
+       ></item>
+    <item android:id="@+id/SyncBibtex" 
+        android:title="@string/mcm_syncbibtex"
+        ></item>
+    <item android:id="@+id/SyncFull" 
+        android:title="@string/mcm_syncfull"
+        ></item>
+    <item android:id="@+id/Unlink" 
+        android:title="@string/mcm_unlink"
+        ></item>
+
+</menu>

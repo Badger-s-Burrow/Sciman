@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SciMan</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    
+    <string-array name="sort_array">
+        <item>Autor a-z</item>
+        <item>Titel a-z</item>
+        <item>Jahr 0-9</item>
+        <item>Journal a-z</item>
+        <item>Timestamp 0-9</item>
+        <item>Bibtexkey a-z</item>
+    </string-array>
+    
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+
+    <string name="news_added">&quot;added on &quot;</string>
+    <string name="news_updated">&quot;updated on &quot;</string>
+
+    <!-- old strings -->    
+    <string name="tab_bib">Bibliographies</string>
+    <string name="tab_conf">Conferences</string>
+    <string name="tab_my">My</string>   
+    
+   
+    <string name="header_author">&quot;Author&quot;</string>
+    <string name="header_title">&quot;Title&quot;</string>
+    <string name="header_year">&quot;Year&quot;</string>
+    <string name="header_journal">&quot;Journal&quot;</string>
+    <string name="header_timestamp">&quot;Timestamp&quot;</string>
+    <string name="header_bibtexkey">Bibtexkey</string>
+    <string name="noitem">The bibliography contains no items.</string>
+    <string name="search_noitem">The search did not return any items!\nPlease be aware, that the search is case sensitive.</string>
+    <string name="holds_noitem">There have not been viewed any articles or items yet.</string>
+    <string name="emptyfield">&quot;                                                                        &quot;</string>
+    <string name="max_items_warn">Maximum number of items reached!</string>
+
+
+    <string name="main_nav_news">News</string>
+    <string name="main_nav_profile">Profile</string>
+    <string name="main_nav_contacts">Contacts</string>
+
+    
+    <string name="sortdrawer_title">&quot;Sorting&quot;</string>
+    
+    <string name="dv_author">&quot;Author: &quot;</string>
+    <string name="dv_title">&quot;Title: &quot;</string>
+    <string name="dv_year">&quot;Year: &quot;</string>
+    <string name="dv_journal">&quot;Journal: &quot;</string>
+    <string name="dv_publisher">&quot;Publisher: &quot;</string>
+    <string name="dv_abstract">&quot;Abstract:  &quot;</string>
+    <string name="dv_bibtexkey">&quot;Bibtexkey:  &quot;</string>
+    <string name="dv_file">&quot;Filename:  &quot;</string>
+    <string name="dv_doi">&quot;Doi:  &quot;</string>
+    <string name="bt_opendoi">&quot;open doi link&quot;</string>
+    <string name="bt_viewpdf">&quot;View pdf&quot;</string>
+    <string name="dv_nopdfapp">&quot;No Application Available to View PDF&quot;</string>
+    <string name="dv_nopdf">&quot;Could not find PDF&quot;</string>
+    
+    <string name="nb_header">&quot;New Bibliography&quot;</string>
+    <string name="nb_name">&quot;Enter a name &quot;</string>
+    <string name="nb_name_dropb">&quot;Enter a name/DropBox folder&quot;</string>
+    <string name="nb_source">&quot;Choose a source &quot;</string>
+    <string name="nb_file">&quot;Enter file location &quot;</string>
+    <string name="nb_file_dropb">&quot;Enter bibtex file&quot;</string>
+    <string name="nb_comment">&quot;Enter comments &quot;</string>
+    <string name="nb_pdfdirectory">&quot;Pdf directory &quot;</string>
+    <string name="nb_pdfdirectory_dropb">&quot;"Enter local pdfdirectory"&quot;</string>
+    <string name="nb_name_hint">&quot;Name &quot;</string>
+    <string name="nb_file_hint">&quot;File location f.e. "/abc.bib"&quot;</string>
+    <string name="nb_file_hint_dropb">&quot;f.e. \"abc.bib\"&quot;</string>
+    <string name="nb_comment_hint">&quot;Comments &quot;</string>
+    <string name="nb_pdfdirectory_hint">&quot;Pdf directory &quot;</string>
+    <string name="nb_extern">&quot;Select saving device&quot;</string>
+    <string name="nb_extern_text">&quot;Select to enable that all paths start at the mount point of the external device f.e. sdcard&quot;</string>
+    <string name="nb_gallery">&quot;Background image&quot;</string>
+    <string name="nb_ok">&quot;   Ok   &quot;</string>
+    <string name="nb_local">&quot;local&quot;</string>
+    <string name="nb_dropbox">&quot;Dropbox&quot;</string>
+    <string name="nb_localapp">&quot;local, sync with installed app&quot;</string>
+    <string name="nb_sourcemanualApp">&quot;app: &quot;</string>
+    <string name="nb_sourcemanualApp_None">&quot;Click to choose&quot;</string>
+    <string name="sourcenotchosen">&quot;You have to choose a source!&quot;</string>
+    <string name="nb_loadingtit">&quot;Loading&#8230;&quot;</string>
+    <string name="nb_loadinginfo">&quot;Loading list of installed applications, please wait&#8230;&quot;</string>
+    
+    <string name="ncf_header">&quot;Create a new conference &quot;</string>
+    <string name="ncf_name">&quot;Enter the name &quot;</string>
+    <string name="ncf_year">&quot;Select the start date &quot;</string>
+    <string name="ncf_location">&quot;Enter the location &quot;</string>
+    <string name="ncf_topics">&quot;Enter the topics &quot;</string>
+    <string name="ncf_comment">&quot;Enter comments &quot;</string>
+    <string name="ncf_poster">&quot;Show in posters &quot;</string>
+    <string name="ncf_poster_text">&quot;Select to show this conference in the list for the poster&quot;</string>
+    <string name="ncf_contacts">&quot;Show in contacts &quot;</string>
+    <string name="ncf_contacts_text">&quot;Select to show this conference in the list for the contacts&quot;</string>
+    <string name="ncf_name_hint">&quot;Name &quot;</string>
+    <string name="ncf_location_hint">&quot;Takes place at &quot;</string>
+    <string name="ncf_topics_hint">&quot;Specify a topic &quot;</string>
+    <string name="ncf_comment_hint">&quot;Comments &quot;</string>
+    <string name="nc_alreadyexists">&quot;A conference with the same date and similar name already exists. Please change one of the relevant fields.&quot;</string>
+    <string name="ncf_header_online">&quot;Select a conference&quot;</string>
+
+    <string name="ecf_header">&quot;Edit the conference &quot;</string>
+
+    <string name="cf_nav_news">&quot;News&quot;</string>
+    <string name="cf_nav_program">&quot;Program&quot;</string>
+    <string name="cf_nav_contrib">&quot;Contributions&quot;</string>
+    <string name="cf_nav_map">&quot;Map&quot;</string>
+    <string name="cf_nav_schedule">&quot;Personal schedule&quot;</string>
+    <string name="cf_nav_stored_contrib">&quot;Stored contributions&quot;</string>
+    <string name="cf_nav_stored_contacts">&quot;Stored contacts&quot;</string>
+    <string name="cf_nav_impressum">&quot;About&quot;</string>
+
+    <string name="cfv_date">&quot;Date: &quot;</string>
+    <string name="cfv_location">&quot;Location: &quot;</string>
+    <string name="cfv_topics">&quot;Topics: &quot;</string>
+    <string name="cfv_comment">&quot;Comments: &quot;</string>
+    <string name="cfv_poster">&quot;Posters &quot;</string>
+    <string name="cfv_contacts">&quot;Contacts &quot;</string>
+    <string name="cfv_savepath">&quot;Folder: &quot;</string>
+    <string name="cfv_items">&quot; items  &quot;</string>
+    
+    <string name="custompref_header">&quot;Folder and sync settings&quot;</string>
+    <string name="custompref_extern">&quot;Save on external device&quot;</string>
+    <string name="custompref_extern_text">&quot;Select to enable saving of all created items on the external device f.e. sdcard.&quot;</string>
+    <string name="custompref_savepath">&quot;Savepath&quot;</string>
+    <string name="custompref_savepath_hint">&quot;Every created item will be saved in this folder.&quot;</string>
+    <string name="custompref_source_text">&quot;which is used to syncronize the created items.&quot;</string>
+    
+    <string name="custompref_topics">&quot;Current topics&quot;</string>
+    
+    <string name="incorrectfolder">&quot;Invalid name for a folder. Please choose a different name.&quot;</string>
+    
+    <string name="npo_header">&quot;Create a new poster &quot;</string>
+    <string name="npo_name">&quot;Enter mainauthors name &quot;</string>
+    <string name="npo_name_hint">&quot;firstname lastname&quot;</string>
+    <string name="npo_coauthor">&quot;Enter coauthors &quot;</string>
+    <string name="npo_coauthor_hint">&quot;... &quot;</string>
+    <string name="npo_title">&quot;Enter title &quot;</string>
+    <string name="npo_title_hint">&quot;... &quot;</string>
+    <string name="npo_image">&quot;Get image&quot;</string>
+    <string name="npo_image_camera">&quot;Take picture&quot;</string>
+    <string name="npo_image_file">&quot; Select file &quot;</string>
+    <string name="npo_abstract">&quot;Enter abstract &quot;</string>
+    <string name="npo_abstract_hint">&quot;... &quot;</string>
+    <string name="npo_references">&quot;Enter references &quot;</string>
+    <string name="npo_references_hint">&quot;... &quot;</string>
+    
+    <string name="nco_header">&quot;Create a new contact&quot;</string>
+    <string name="nco_name">&quot;Enter name &quot;</string>
+    <string name="nco_name_hint">&quot;firstname lastname&quot;</string>
+    <string name="nco_institute">&quot;Enter institute&quot;</string>
+    <string name="nco_institute_hint">&quot;... &quot;</string>
+    <string name="nco_organization">&quot;Enter organization&quot;</string>
+    <string name="nco_organization_hint">&quot;... &quot;</string>
+    <string name="nco_image">&quot;Get image&quot;</string>
+    <string name="nco_emailadress">&quot;Enter email adress&quot;</string>
+    <string name="nco_emailadress_hint">&quot;... &quot;</string>
+    <string name="nco_phonenumber">&quot;Enter phone number&quot;</string>
+    <string name="nco_phonenumber_hint">&quot;... &quot;</string>
+    <string name="nco_mobilenumber">&quot;Enter mobile number&quot;</string>
+    <string name="nco_mobilenumber_hint">&quot;... &quot;</string>
+    <string name="nco_researchtopics">&quot;Enter research topics&quot;</string>
+    <string name="nco_researchtopics_hint">&quot;... &quot;</string>
+    
+    <string name="eco_header">&quot;Edit contact&quot;</string>
+    
+    <string name="pv_header">&quot; Posters from &quot;</string>
+    <string name="cv_header">&quot; Contacts from &quot;</string>
+    
+    <string name="search_label">&quot;Search&quot;</string>
+    <string name="search_hint">&quot;"Search in your_application_name"&quot;</string>
+    <string name="search_message">&quot;"Insert some text you are searching for:"&quot;</string>
+    
+    <string name="ok">"OK"</string>
+    <string name="cancel">"Cancel"</string>
+    <string name="default_string">"Use default"</string>
+    <string name="custom">"Custom"</string>
+    <string name="fnf">"File not found!"</string>
+    <string name="alert">"Alert"</string>
+    <string name="none">None</string>
+        
+    <string name="eb_header">&quot;Edit Bibliography&quot;</string>
+    <string name="eb_backp_warn1">&quot;Background picture for &quot;</string>
+    <string name="eb_backp_warn2">&quot; is not avaible!&quot;</string>
+    <string name="eb_select_pic">&quot;Select Picture&quot;</string>
+    <string name="eb_deselect_pic">&quot;Long click to deselect custom picture&quot;</string>    
+    
+    <string name="main_bib_addfirst">"Add new bibliography"</string>
+    <string name="main_bib_hint">In order to add a new bibtex-file:\n    Menu -> New -> Fill form</string>
+    <string name="main_bib_header">&quot; Your bibliographies:&quot;</string>
+    
+    <string name="main_conf_addfirst">"Add new conference"</string>
+    <string name="main_conf_hint">In order to add a new conference:\n    Menu -> New -> Fill form</string>
+    <string name="main_conf_header">&quot; Your conferences:&quot;</string>
+    
+    <string name="main_settings">&quot;Folder and sync settings&quot;</string>
+    <string name="main_settingsmessg">&quot;This is the first item you intent to create, therefore you have set up some general settings.&quot;</string>
+    
+    <string name="main_my_addfirst">"Add new item"</string>
+    <string name="main_my_hint">Under construction</string>
+    <string name="main_my_header">&quot; Your items:&quot;</string>
+
+    <string name="main_menu_profile">Profile</string>
+    <string name="main_menu_new">New</string>
+    <string name="main_menu_deleteall">Delete All</string>
+    <string name="main_menu_preferences">Preferences</string>
+    <string name="main_menu_about">Info/About</string>
+    <string name="main_delete">Delete</string>    
+
+    <string name="max_bibs_warn">Maximum number of bibliographies reached!</string>
+    <string name="max_confs_warn">Maximum number of conferences reached!</string>
+    
+    <string name="app_not_found">Specified app not found!</string>
+    
+    <string name="main_deletemessg">&quot;Do you wish to delete all your bibliographies?&quot;</string>
+    
+    <string name="about_homepage">"homepage"</string>
+    <string name="about_main1">&quot;This app is intended to use for looking through bibtex-files created with the free software Jabref, but not for editing purposes up to now.\r\nIf provided you can also directly access the corresponding pdf.\nYou can manage several bibliographies at the same time, while giving them your own personal look. Therefore you can use predefined backgrounds or just create your own. If your looking for examples or drafts just visit our &quot;</string>
+    <string name="about_main2">&quot;.\nSearching and sorting capabilites are implemented to view it the way you want it.\nIt has been tested on several devices and works nicely on Android 2.2 upwards on smartphones as well as tablets.\n\nFuture versions will implement library sync via svn, git, cloud etc.\nFor feature request or bugs please visit our website or send an email to\n\nI hope you are enjoying using this app and found it handy for your daily research.&quot;</string>
+    <string name="about_disc">"Disclaimer: I am not affiliated with Jabref or any of the Journals.\nThis app is developed and mantained by Johannes Reim."</string>
+    
+    <string name="mcm_title_recent">Recently viewed items</string>
+    <string name="mcm_clearecent">Clear items</string>
+    <string name="mcm_edititem">Edit</string>
+    <string name="mcm_deleteitem">Delete</string>
+    <string name="mcm_syncbibtex">Sync: Bibfile</string>
+    <string name="mcm_syncfull">Sync: Full</string>
+    <string name="mcm_unlink">Sync: Unlink</string>
+    <string name="mcm_syncmanualapp">Sync: </string>
+     
+    <string name="pref_general">General</string>
+    
+    <string name="pref_screen_folder">Folder and sync settings</string>
+    <string name="pref_screen_folder_sum">Set up folder and syncing for the created items.</string>
+    
+    <string name="pref_savepath">&quot;Savepath&quot;</string>
+    <string name="pref_savepath_hint">&quot;The created data will be saved in the choosen folder.&quot;</string>
+    <string name="pref_syncing">&quot;Syncing method&quot;</string>
+    <string name="pref_syncing_sum">&quot;Choose a way to sync the created data.&quot;</string>
+    <string name="source_none">None</string>
+        
+    <string name="pref_language">Choose language</string>
+    <string name="pref_language_sum">Changes the localization for this app.</string>
+    <string name="pref_language_warn">&quot;Please restart app to complete localization change&quot;</string>
+    
+    <string name="pref_screen_topics">&quot;Manage the topics&quot;</string>
+    <string name="pref_screen_topics_sum">&quot;Create topics, delete topics or rearrange the order.&quot;</string>
+    
+    <string name="pref_systemapps">Hide system apps</string>
+    <string name="pref_systemapps_sum">Select to hide the preinstalled system apps from the applist for syncing.</string>
+    <string name="pref_graphics">Graphics</string>
+    <string name="pref_splash">&quot;Splash screen enabled&quot;</string>
+    <string name="pref_splash_sum">&quot;Select to enable the splash screen on application startup.&quot;</string>
+    <string name="pref_backpic">&quot;Background pics enabled&quot;</string>
+    <string name="pref_backpic_sum">&quot;Select to enable the background pictures for the different bibliographies.&quot;</string>
+    <string name="pref_colortheme">&quot;Choose color theme&quot;</string>
+    <string name="pref_colortheme_sum">&quot;Overall color theme.&quot;</string>
+    
+    <string name="pref_tabs">&quot;Settings for each tab&quot;</string>
+    <string name="pref_screen_bib">&quot;Bibliographic settings&quot;</string>
+    <string name="pref_screen_bib_sum">&quot;All settings related only to the bibliographic tab.&quot;</string>
+    <string name="pref_screen_conf">&quot;Conference settings&quot;</string>
+    <string name="pref_screen_conf_sum">&quot;All settings related only to the conference tab.&quot;</string>
+    <string name="pref_screen_my">&quot;My-tab settings&quot;</string>
+    <string name="pref_screen_my_sum">&quot;All settings related only to the my tab.&quot;</string>
+    
+   <string name="pref_bibgeneral">&quot;General&quot;</string>
+   <string name="pref_recentbib">&quot;Recent viewed items&quot;</string>
+   <string name="pref_recentbib_sum">&quot;Select to enable logging of the recently viewed items in your bibliographies.&quot;</string>
+    <string name="pref_highrows">&quot;Highlight rows enabled&quot;</string>
+    <string name="pref_highrows_sum">&quot;Select to enable different colored rows in the bibliographic view.&quot;</string>
+    <string name="pref_bibview">&quot;Bibliography view&quot;</string>
+    <string name="pref_textsize">&quot;Automatic text size&quot;</string>
+    <string name="pref_textsize_sum">&quot;Select to enable automatic adjusting of the text size.&quot;</string>
+    <string name="pref_textsizeman">&quot;Set text size&quot;</string>
+    <string name="pref_textsizeman_sum">&quot;for all text within the bibliographic view&quot;</string>
+    <string name="pref_textsizecurrent">&quot;current text size: &quot;</string>
+    <string name="pref_headertextsize">&quot;Set text size for header&quot;</string>
+    <string name="pref_headertextsize_sum">&quot;Header text size is larger by the selected amount&quot;</string>  
+    <string name="pref_sorttimestamp">&quot;Enable timestamp filed&quot;</string>
+    <string name="pref_sorttimestamp_sum">&quot;Select to show items timestamp and sorting capabilities.&quot;</string> 
+    <string name="pref_sortsearch">&quot;Save sort and search&quot;</string>
+    <string name="pref_sortsearch_sum">&quot;Select to save the current sorting and search.&quot;</string>
+    <string name="pref_bibwidth">&quot;Choose view width&quot;</string>
+    <string name="pref_bibwidth_sum">&quot;Change how much the view width should extend in relation to the display width.&quot;</string>
+    <string name="pref_detailview">&quot;Detailed view&quot;</string>
+    <string name="pref_pdffile">&quot;View pdf filename&quot;</string>
+    <string name="pref_pdffile_sum">&quot;Select to view the pdf filename within the detailed view.&quot;</string>
+    <string name="pref_doilink">&quot;View doi link&quot;</string>
+    <string name="pref_doilink_sum">&quot;Select to view the doi link within the detailed view.&quot;</string>
+
+    <string name="pref_confgeneral">&quot;General&quot;</string>
+    <string name="pref_showconfyear">&quot;Show year&quot;</string>
+    <string name="pref_showconfyear_sum">&quot;Select to show the year when each conference took place in the overview.&quot;</string>
+    <string name="pref_sortconfs">&quot;Sort conferences&quot;</string>
+    <string name="pref_sortconfs_sum">&quot;Select how the conferences should be sorted.&quot;</string>
+    
+    <string name="dropb_notlinked">&quot;This Bib is not linked with Dropbox!&quot;</string>
+    <string name="dropb_status_linked">&quot;Status: linked&quot;</string>
+    <string name="dropb_status_unlinked">&quot;Status: unlinked&quot;</string>
+    <string name="dropb_error_appkey">&quot;The app or secret key is corrupted please report this bug to the website!&quot;</string>
+    <string name="dropb_error_authen">&quot;Couldn't authenticate with Dropbox:&quot;</string>
+    <string name="dropb_downloading">&quot;"Downloading &#8230;"&quot;</string>
+    <string name="dropb_collfiles">&quot;"collecting files"&quot;</string>
+    <string name="dropb_error_canceled">&quot;Canceled&quot;</string>
+    <string name="dropb_error_notdir">&quot; is not a directory."&quot;</string>
+    <string name="dropb_error_dirempty">&quot;The Dropbox directory is empty.&quot;</string>
+    <string name="dropb_error_uptodate">&quot;No modified or new files in that directory&quot;</string>
+    <string name="dropb_error_dirnotvalid">&quot;Please enter a valid local directory starting with \'/\'&quot;</string>
+    <string name="dropb_error_couldnotcreate">&quot;"Couldn\'t create a local file to store the current file"&quot;</string>
+    <string name="dropb_error_downcanc">&quot;"Download canceled"&quot;</string>
+    <string name="dropb_error_foldercreated">&quot;"Folder has been created, please fill with pdfs and bibtex file."&quot;</string>
+    <string name="dropb_error_foldernotcreated1">&quot;"Folder "&quot;</string>
+    <string name="dropb_error_foldernotcreated2">&quot;" could not be created, please create manually in appfolder."&quot;</string>
+    <string name="dropb_error_network">&quot;"Network error.  Try again."&quot;</string>
+    <string name="dropb_error_dropbox">&quot;"Dropbox error.  Try again."&quot;</string>
+    <string name="dropb_error_unkown">&quot;"Unknown error.  Try again."&quot;</string>
+    <string name="dropb_updated">&quot;"Library files successfully updated"&quot;</string>
+    <string name="dropb_downloadingbibtex">&quot;"Downloading Bibtex file"&quot;</string>
+    <string name="dropb_error_nobibindir1">&quot;"No bibtexfile "&quot;</string>
+    <string name="dropb_error_nobibindir2">&quot;" in directory"&quot;</string>
+    <string name="dropb_error_nobibmod">&quot;"No modified or new bibtexfile in that directory."&quot;</string>
+    <string name="dropb_bibupdated">&quot;"Bibtex file successfully updated"&quot;</string>
+    <string name="dropb_complete">&quot;"Download complete"&quot;</string>
+
+</resources>

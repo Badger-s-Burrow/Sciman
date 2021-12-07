@@ -1,0 +1,88 @@
+<PreferenceScreen 
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:sciman="http://schemas.android.com/apk/res-auto">
+         <PreferenceCategory
+       		android:key="catBibgeneral"
+       		android:title="@string/pref_bibgeneral">
+        	<CheckBoxPreference
+	            android:id="@+id/isRecentBibEnabled"
+	            android:key="isRecentBibEnabled"
+	            android:title="@string/pref_recentbib"
+	            android:summary="@string/pref_recentbib_sum"
+	            android:defaultValue="false"/>
+        </PreferenceCategory>  
+            
+        <PreferenceCategory
+        	android:key="catBibview"
+        	android:title="@string/pref_bibview">
+        <de.badgersburrow.sciman.library.SlidebarPreference
+		    android:id="@+id/prefTextSize"
+	        android:key="prefTextSize"
+	        android:title="@string/pref_textsizeman"
+	        android:summary="@string/pref_textsizeman_sum"
+	        android:dialogMessage="@string/pref_textsizeman_sum"
+	        android:defaultValue="14"
+	        android:persistent="true"
+			sciman:minValue="6"
+			sciman:maxValue="40"
+	        android:text=" px"/>
+        <de.badgersburrow.sciman.library.SlidebarPreference
+		    android:id="@+id/prefHeaderTextSize"
+	        android:key="prefHeaderTextSize"
+	        android:title="@string/pref_headertextsize"
+	        android:summary="@string/pref_headertextsize_sum"
+	        android:dialogMessage="@string/pref_headertextsize_sum"
+	        android:defaultValue="2"
+	        android:persistent="true"
+			sciman:minValue="0"
+			sciman:maxValue="10"
+	        android:text=" px"/>
+        <CheckBoxPreference
+            android:id="@+id/isCheckerEnabled"
+            android:key="isCheckerEnabled"
+            android:title="@string/pref_highrows"
+            android:summary="@string/pref_highrows_sum"
+            android:defaultValue="true"/>
+		<de.badgersburrow.sciman.library.SlidebarPreference
+		    android:id="@+id/prefBibwidth"
+	        android:key="prefBibwidth"
+	        android:title="@string/pref_bibwidth"
+	        android:summary="@string/pref_bibwidth_sum"
+	        android:dialogMessage="@string/pref_bibwidth_sum"
+	        android:defaultValue="130"
+	        android:persistent="true"
+			sciman:minValue="100"
+			sciman:maxValue="250"
+	        android:text=" %"/>
+		<CheckBoxPreference
+            android:id="@+id/isSorttimestampEnabled"
+            android:key="isSorttimestampEnabled"
+            android:title="@string/pref_sorttimestamp"
+            android:summary="@string/pref_sorttimestamp_sum"
+            android:defaultValue="false"/>
+        <CheckBoxPreference
+            android:id="@+id/isSavesortsearchEnabled"
+            android:key="isSavesortsearchEnabled"
+            android:title="@string/pref_sortsearch"
+            android:summary="@string/pref_sortsearch_sum"
+            android:defaultValue="false"/>
+        </PreferenceCategory>
+        
+        <PreferenceCategory
+        	android:key="catDetailview"
+       		android:title="@string/pref_detailview">
+		<CheckBoxPreference
+            android:id="@+id/isViewpdffileEnabled"
+            android:key="isViewpdffileEnabled"
+            android:title="@string/pref_pdffile"
+            android:summary="@string/pref_pdffile_sum"
+            android:defaultValue="false"/>
+		<CheckBoxPreference
+            android:id="@+id/isViewdoilinkEnabled"
+            android:key="isViewdoilinkEnabled"
+            android:title="@string/pref_doilink"
+            android:summary="@string/pref_doilink_sum"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+              
+</PreferenceScreen>

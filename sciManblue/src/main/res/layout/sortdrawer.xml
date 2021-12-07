@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_right_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:orientation="vertical"
+           >
+           <RelativeLayout 
+    
+    android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+	<TextView    
+	    android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:id="@+id/sortdrawer_header"
+		android:text="@string/sortdrawer_title"
+		android:textColor="@color/sortdrawer_color"
+		android:paddingLeft="16dp"
+	    android:paddingTop="6dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:background="@android:drawable/list_selector_background"/>  
+	
+	<View
+	    android:id="@+id/sortdrawer_separate"
+	    android:layout_alignParentLeft="true"
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dip"
+	    android:layout_below="@+id/sortdrawer_header"
+	    android:layout_marginLeft="6dp"
+	    android:layout_marginRight="6dp"
+	    android:background="@color/sortdrawer_color" />
+	<ListView android:layout_width="240dp"
+        android:layout_height="match_parent">
+	    
+	</ListView>
+	
+	   
+</RelativeLayout>
+<TextView    
+	    android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:id="@+id/sortdrawer_author"
+		android:text="@string/header_author"
+		android:textColor="#fff"
+		android:paddingLeft="16dp"
+	    android:paddingTop="6dp"
+	    android:textAppearance="?android:attr/textAppearanceMedium"
+		/>  
+		<LinearLayout
+        android:id="@+id/ll_author"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rB_author0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sortdrawer_color"
+            android:clickable="True"
+            android:paddingRight="@dimen/sortdrawer_radio_margin"
+            android:text="a-z" />
+
+        <RadioButton
+            android:id="@+id/rB_author1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sortdrawer_color"
+            android:clickable="True"
+            android:text="z-a" />
+
+    </LinearLayout>
+		<TextView    
+	    android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:id="@+id/sortdrawer_title"
+		android:text="@string/header_title"
+		android:textColor="@color/sortdrawer_color"
+		android:paddingLeft="16dp"
+	    android:paddingTop="6dp"
+	    android:textAppearance="?android:attr/textAppearanceMedium"
+		/>  
+				<LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rB_title0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sortdrawer_color"
+            android:clickable="True"
+            android:paddingRight="@dimen/sortdrawer_radio_margin"
+            android:text="a-z" />
+
+        <RadioButton
+            android:id="@+id/rB_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sortdrawer_color"
+            android:clickable="True"
+            android:text="z-a" />
+
+    </LinearLayout>
+		<TextView    
+	    android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:id="@+id/sortdrawer_year"
+		android:text="@string/header_year"
+		android:textColor="@color/sortdrawer_color"
+		android:paddingLeft="16dp"
+	    android:paddingTop="6dp"
+	    android:textAppearance="?android:attr/textAppearanceMedium"
+		/>  
+						<LinearLayout
+        android:id="@+id/ll_year"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rB_year0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sortdrawer_color"
+            android:paddingRight="@dimen/sortdrawer_radio_margin"
+            android:text="0-9" />
+
+        <RadioButton
+            android:id="@+id/rB_year1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sortdrawer_color"
+            android:text="9-0" />
+
+    </LinearLayout>
+		<TextView    
+	    android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:id="@+id/sortdrawer_journal"
+		android:text="@string/header_journal"
+		android:textColor="@color/sortdrawer_color"
+		android:paddingLeft="16dp"
+	    android:paddingTop="6dp"
+	    android:textAppearance="?android:attr/textAppearanceMedium"
+		/>  
+						<LinearLayout
+        android:id="@+id/ll_journal"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rB_journal0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sortdrawer_color"
+            android:paddingRight="@dimen/sortdrawer_radio_margin"
+            android:text="a-z" />
+
+        <RadioButton
+            android:id="@+id/rB_journal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sortdrawer_color"
+            android:text="z-a" />
+
+    </LinearLayout>
+				<TextView    
+	    android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:id="@+id/sortdrawer_timestamp"
+		android:text="@string/header_timestamp"
+		android:textColor="@color/sortdrawer_color"
+		android:paddingLeft="16dp"
+	    android:paddingTop="6dp"
+	    android:textAppearance="?android:attr/textAppearanceMedium"
+		/>  
+						<LinearLayout
+        android:id="@+id/ll_timestamp"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rB_timestamp0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sortdrawer_color"
+            android:paddingRight="@dimen/sortdrawer_radio_margin"
+            android:text="0-9" />
+
+        <RadioButton
+            android:id="@+id/rB_timestamp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sortdrawer_color"
+            android:text="9-0" />
+
+    </LinearLayout>
+				<TextView    
+	    android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:id="@+id/sortdrawer_bibtexkey"
+		android:text="@string/header_bibtexkey"
+		android:textColor="@color/sortdrawer_color"
+		android:paddingLeft="16dp"
+	    android:paddingTop="6dp"
+	    android:textAppearance="?android:attr/textAppearanceMedium"
+		/>  
+						<LinearLayout
+        android:id="@+id/ll_bibtexkey"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rB_bibtexkey0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textColor="@color/sortdrawer_color"
+            android:paddingRight="@dimen/sortdrawer_radio_margin"
+            android:text="a-z" />
+
+        <RadioButton
+            android:id="@+id/rB_bibtexkey1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sortdrawer_color"
+            android:text="z-a" />
+
+    </LinearLayout>
+
+		
+</LinearLayout>

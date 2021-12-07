@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/customdialog"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp"
+    android:minWidth="300dp">
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#FFFFFF" />
+ 
+    <ListView
+        android:id="@+id/dialoglist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+ 
+</LinearLayout>

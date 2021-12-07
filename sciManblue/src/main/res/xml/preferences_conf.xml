@@ -1,0 +1,25 @@
+<PreferenceScreen 
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:sciman="http://schemas.android.com/apk/res/de.badgersburrow.sciman"
+            android:title="@string/pref_screen_conf">
+         <PreferenceCategory
+       		android:key="catConfgeneral"
+       		android:title="@string/pref_confgeneral">
+        	<CheckBoxPreference
+	            android:id="@+id/isShowConfYearEnabled"
+	            android:key="isShowConfYearEnabled"
+	            android:title="@string/pref_showconfyear"
+	            android:summary="@string/pref_showconfyear_sum"
+	            android:defaultValue="false"/>
+        	<ListPreference 
+	            android:entries="@array/pref_sortconfs_entries" 
+	            android:title="@string/pref_sortconfs" 
+	            android:key="pref_sortconfs" 
+	            android:entryValues="@array/pref_sortconfs_values" 
+	            android:summary="@string/pref_sortconfs_sum" 
+            />
+        </PreferenceCategory>  
+            
+
+              
+</PreferenceScreen>

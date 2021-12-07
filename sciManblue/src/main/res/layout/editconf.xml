@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NewConfActivity" >
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        class="test.androidbib$VerticalScrollView"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ecf_header"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ncf_name"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="    "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/ed_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/ncf_name_hint"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ncf_location"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="    "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/ed_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/ncf_location_hint"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ncf_year"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <DatePicker
+                    android:id="@+id/dp_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+                    <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ncf_topics"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_topicsph"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="    "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:orientation="vertical">
+                    
+                    <LinearLayout
+                        android:id="@+id/ll_topics"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content" 
+		                android:orientation="vertical">
+                
+               		</LinearLayout>
+                
+                        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <ImageView
+                    android:id="@+id/iv_list"
+                    android:layout_toRightOf="@+id/tv_topicsph"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:clickable="true"
+                    android:background="@android:drawable/list_selector_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/list_button" />
+                
+                <EditText
+                    android:id="@+id/ed_topics"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_list" 
+                    android:layout_toLeftOf="@+id/iv_addtopic"                                        
+                    android:hint="@string/ncf_topics_hint"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true" >
+
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/iv_addtopic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:background="@android:drawable/list_selector_background"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"                    
+                    android:src="@drawable/add_black" />
+
+            </RelativeLayout>
+                        
+                    </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nb_comment"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="    "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                <EditText
+                    android:id="@+id/ed_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/nb_comment_hint"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true" >
+                </EditText>
+            </LinearLayout>
+             <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:text="@string/ncf_poster" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/ed_poster_placeholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:text="    " />
+
+        <TextView
+            android:id="@+id/tv_poster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"            
+            android:layout_toRightOf="@+id/ed_poster_placeholder"
+            android:layout_toLeftOf="@+id/cb_poster"
+            android:hint="@string/ncf_poster_text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            />            
+		
+        <CheckBox
+            android:id="@+id/cb_poster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:checked="true" />
+
+    </RelativeLayout>
+    
+           <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:text="@string/ncf_contacts" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/ed_contacts_placeholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:text="    " />
+
+        <TextView
+            android:id="@+id/tv_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"            
+            android:layout_toRightOf="@+id/ed_contacts_placeholder"
+            android:layout_toLeftOf="@+id/cb_contacts"
+            android:hint="@string/ncf_contacts_text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            />            
+		
+        <CheckBox
+            android:id="@+id/cb_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:checked="true" />
+
+    </RelativeLayout>
+            <TextView
+                android:id="@+id/testtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <Button
+                android:id="@+id/bt_ok"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nb_ok" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

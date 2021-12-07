@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+    <group >
+        <item
+            android:id="@+id/cf_nav_sciman"
+            android:checked="false"
+            android:icon="@drawable/book"
+            android:title="@string/app_name" />
+
+        <item
+            android:id="@+id/cf_nav_news"
+            android:checked="false"
+            android:icon="@drawable/newspaper"
+            android:title="@string/cf_nav_news" />
+
+        <item
+            android:id="@+id/cf_nav_program"
+            android:checked="false"
+            android:icon="@drawable/timetable"
+            android:title="@string/cf_nav_program" />
+
+        <item
+            android:id="@+id/cf_nav_contrib"
+            android:checked="false"
+            android:icon="@drawable/presentation"
+            android:title="@string/cf_nav_contrib" />
+
+        <item
+            android:id="@+id/cf_nav_map"
+            android:checked="false"
+            android:icon="@drawable/map"
+            android:title="@string/cf_nav_map" />
+
+    </group>
+    <group android:id="@+id/cf_nav_group_custom">
+        <item
+            android:id="@+id/cf_nav_schedule"
+            android:checked="false"
+            android:icon="@drawable/timetable"
+            android:title="@string/cf_nav_schedule" />
+
+        <item
+            android:id="@+id/cf_nav_stored_contrib"
+            android:checked="false"
+            android:icon="@drawable/presentation"
+            android:title="@string/cf_nav_stored_contrib" />
+
+        <item
+            android:id="@+id/cf_nav_stored_contacts"
+            android:checked="false"
+            android:icon="@drawable/account_multiple"
+            android:title="@string/cf_nav_stored_contacts" />
+
+    </group>
+    <group android:id="@+id/cf_nav_group_about">
+        <item
+            android:id="@+id/cf_nav_impressum"
+            android:checked="false"
+            android:icon="@drawable/information"
+            android:title="@string/cf_nav_impressum" />
+
+    </group>
+    </group>
+</menu>

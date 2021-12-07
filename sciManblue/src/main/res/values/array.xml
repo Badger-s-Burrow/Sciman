@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_color_theme_entries">        
+        <item>Black (Default)</item>
+        <item>White</item>
+    </string-array>
+    <string-array name="pref_color_theme_values">        
+        <item>"Black"</item>
+        <item>"White"</item>
+    </string-array>
+    
+    <string-array name="pref_color_theme_entries_jellybean">    
+        <item>Holographic Dark (Default)</item> 
+        <item>Holographic Light</item>                  
+    </string-array>
+    <string-array name="pref_color_theme_values_jellybean">        
+        <item>"Dark"</item> 
+        <item>"Light"</item> 
+    </string-array>
+    
+    
+    <string-array name="pref_language_entries">     
+        <item>English</item>
+        <item>French</item>
+        <item>German</item>
+    </string-array>
+    <string-array name="pref_language_values"> 
+        <item>"en"</item>
+        <item>"fr"</item>
+        <item>"de"</item>
+    </string-array>
+    
+    <string-array name="sources"> 
+        <item>@string/nb_local</item>
+        <item>@string/nb_dropbox</item>
+        <item>@string/nb_localapp</item>
+    </string-array>
+    
+    <string-array name="sources_wn"> 
+        <item>@string/source_none</item>
+        <item>@string/nb_dropbox</item>
+        <item>@string/nb_localapp</item>
+    </string-array>
+    
+    <string-array name="sources_wn_values"> 
+        <item>"none"</item>
+        <item>"dropbox"</item>
+        <item>"localapp"</item>
+    </string-array>
+    
+    <string-array name="pref_sortconfs_entries"> 
+        <item>"newest first"</item>
+        <item>"oldest first"</item>
+        <item>"alphabetically"</item>
+    </string-array>
+    
+    <string-array name="pref_sortconfs_values"> 
+        <item>"new"</item>
+        <item>"old"</item>
+        <item>"alpha"</item>
+    </string-array>
+
+
+    if (type.equalsIgnoreCase("Book")){
+    listview_type.setImageResource(R.drawable.entrytypebook);
+    } else if (type.equalsIgnoreCase("Incollection")){
+    listview_type.setImageResource(R.drawable.entrytypeincollection);
+    } else if (type.equalsIgnoreCase("MasterThesis")){
+    listview_type.setImageResource(R.drawable.entrytypethesis);
+    } else if (type.equalsIgnoreCase("PhdThesis")){
+    listview_type.setImageResource(R.drawable.entrytypethesis);
+    } else if (type.equalsIgnoreCase("Thesis")){
+    listview_type.setImageResource(R.drawable.entrytypethesis);
+    } else if (type.equalsIgnoreBookCase("Proceedings")){
+    listview_type.setImageResource(R.drawable.entrytypeproceedings);
+    } else if (type.equalsIgnoreCase("InProceedings")){
+    listview_type.setImageResource(R.drawable.entrytypeinproceedings);
+    } else if (type.equalsIgnoreCase("Manual")){
+    listview_type.setImageResource(R.drawable.entrytypemanual);
+    } else if (type.equalsIgnoreCase("Unpublished")){
+    listview_type.setImageResource(R.drawable.entrytypeunpublished);
+    } else if (type.equalsIgnoreCase("Misc")){
+    listview_type.setImageResource(R.drawable.entrytypemisc);
+    }
+
+
+    <string-array name="img_id_arr_types_keys">
+        <item>Article</item>
+        <item>Book</item>
+        <item>Incollection</item>
+        <item>MasterThesis</item>
+        <item>PhdThesis</item>
+        <item>Thesis</item>
+        <item>Proceedings</item>
+        <item>InProceedings</item>
+        <item>Manual</item>
+        <item>Unpublished</item>
+        <item>Misc</item>
+    </string-array>
+
+    <string-array name="img_id_arr_types_values">
+        <item>@drawable/posterdefault</item>
+        <item>@drawable/entrytypebook</item>
+        <item>@drawable/entrytypeincollection</item>
+        <item>@drawable/entrytypethesis</item>
+        <item>@drawable/entrytypethesis</item>
+        <item>@drawable/entrytypethesis</item>
+        <item>@drawable/entrytypeproceedings</item>
+        <item>@drawable/entrytypeinproceedings</item>
+        <item>@drawable/entrytypemanual</item>
+        <item>@drawable/entrytypeunpublished</item>
+        <item>@drawable/entrytypemisc</item>
+    </string-array>
+
+    
+    <string-array name="img_id_arr_topics_keys">
+       <item>none</item>
+       <item>astronomy</item>
+       <item>biology</item>
+       <item>chemistry</item>
+       <item>electro_engin</item>
+       <item>genetics</item>
+       <item>geography</item>
+       <item>literature</item>
+       <item>magnetism</item>
+       <item>mech_engin</item>
+       <item>microscopy</item>
+       <item>nuclear_phys</item>
+       <item>optics</item>
+       <item>organic_chem</item>
+       <item>custom</item>
+	</string-array>
+    
+     <integer-array name="img_id_arr_topics_values">
+       <item>@drawable/none</item>
+       <item>@drawable/astronomy</item>
+       <item>@drawable/biology</item>
+       <item>@drawable/chemistry</item>
+       <item>@drawable/electro_engin</item>
+       <item>@drawable/genetics</item>
+       <item>@drawable/geography</item>
+       <item>@drawable/literature</item>
+       <item>@drawable/magnetism</item>
+       <item>@drawable/mech_engin</item>
+       <item>@drawable/microscopy</item>
+       <item>@drawable/nuclear_phys</item>
+       <item>@drawable/optics</item>
+       <item>@drawable/organic_chem</item>
+       <item>@drawable/custom</item>
+   </integer-array>
+    
+    
+</resources>

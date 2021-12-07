@@ -1,0 +1,23 @@
+<PreferenceScreen 
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:sciman="http://schemas.android.com/apk/res/de.badgersburrow.sciman"
+     android:title="@string/pref_screen_folder"
+     android:summary="@string/pref_screen_folder_sum">
+	<EditTextPreference
+ 			android:key="pref_savepath"
+ 			android:title="@string/pref_savepath"
+			android:summary="@string/pref_savepath_hint"
+ 			android:dialogTitle="Enter the savepath"/>
+	<CheckBoxPreference
+    		android:key="pref_extern"
+     		android:title="@string/nb_extern"
+     		android:summary="@string/nb_extern_text"
+     		android:defaultValue="true"/>
+	<ListPreference 
+     		android:entries="@array/sources_wn" 
+     		android:title="@string/pref_syncing" 
+     		android:key="pref_syncing" 
+     		android:entryValues="@array/sources_wn_values" 
+     		android:summary="@string/pref_syncing_sum"/>
+</PreferenceScreen>
+        

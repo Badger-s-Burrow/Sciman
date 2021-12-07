@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <string name="news_added">&quot;hinzugefügt am &quot;</string>
+    <string name="news_updated">&quot;aktualisiert am &quot;</string>
+
+    <string name="app_name">SciMan</string>
+    
+    <string name="tab_bib">Bibliotheken</string>
+    <string name="tab_conf">Konferenzen</string>
+    <string name="tab_my">Mein</string>  
+        
+    <string name="header_author">&quot;Autor&quot;</string>
+    <string name="header_title">&quot;Titel&quot;</string>
+    <string name="header_year">&quot;Jahr&quot;</string>
+    <string name="header_journal">&quot;Journal&quot;</string>
+    <string name="header_bibtexkey">Bibtexkey</string>
+    <string name="search_noitem">&quot;Die Suche ergab keine Treffer!\nBeachten Sie bitte, dass die Suche Klein und Großschreibung berücksichtigt!.&quot;</string>
+    <string name="emptyfield">&quot;         &quot;</string>
+	<string name="max_items_warn">Maximale Anzahl an Einträgen wurde erreicht!</string>
+    
+	<string name="sortdrawer_title">&quot;Sortieren&quot;</string>
+    
+    <string name="dv_author">&quot;Author: &quot;</string>
+    <string name="dv_title">&quot;Titel: &quot;</string>
+    <string name="dv_year">&quot;Jahr: &quot;</string>
+    <string name="dv_journal">&quot;Journal: &quot;</string>
+    <string name="dv_publisher">&quot;Verlag: &quot;</string>
+    <string name="dv_abstract">&quot;Abstract:  &quot;</string>
+    <string name="dv_bibtexkey">&quot;Bibtexkey:  &quot;</string>
+    <string name="dv_file">&quot;Dateiname:  &quot;</string>
+    <string name="dv_doi">&quot;Doi:  &quot;</string>
+    <string name="bt_viewpdf">&quot;Öffne pdf&quot;</string>
+    <string name="dv_nopdfapp">&quot;Keine Anwendung verfügbar um PDF anzuzeigen&quot;</string>
+    <string name="dv_nopdf">&quot;PDF konnte nicht gefunden werden&quot;</string>
+    
+    <string name="nb_header">&quot;Neue Bibliothek&quot;</string>
+    <string name="nb_name">&quot;Bibliotheksname &quot;</string>
+    <string name="nb_name_dropb">&quot;Bibliotheksname/Dropbox verzeichnis&quot;</string>
+    <string name="nb_source">&quot;Wähle eine Quelle &quot;</string>
+    <string name="nb_file">&quot;Dateipfad &quot;</string>
+    <string name="nb_file_dropb">&quot;Bibtexdateiname&quot;</string>
+    <string name="nb_comment">&quot;Kommentare &quot;</string>
+    <string name="nb_pdfdirectory">&quot;Pdfvereichnis &quot;</string>
+    <string name="nb_pdfdirectory_dropb">&quot;"Lokales Pdfverzeichnis"&quot;</string>
+    <string name="nb_name_hint">&quot;Name &quot;</string>
+    <string name="nb_file_hint">&quot;z.B. "/abc.bib"&quot;</string>
+    <string name="nb_file_hint_dropb">&quot;z.B. \"abc.bib\"&quot;</string>
+    <string name="nb_comment_hint">&quot;Kommentare &quot;</string>
+    <string name="nb_extern">&quot;Wähle Speicherort&quot;</string>
+    <string name="nb_extern_text">&quot;Aus zu wählen, damit die Pfade auf einem externen Speichermedium z.B. der Sdkarte beginnen.&quot;</string>
+    <string name="nb_pdfdirectory_hint">&quot;Pdfvereichnis &quot;</string>
+    <string name="nb_gallery">&quot;Hintergrundbild&quot;</string>
+    <string name="nb_ok">&quot;   Ok   &quot;</string>
+    <string name="nb_local">&quot;lokal&quot;</string>
+    <string name="nb_dropbox">&quot;Dropbox&quot;</string>
+    <string name="nb_localapp">&quot;lokal, Synchronisation mit einer installierten Anwendung&quot;</string>
+    <string name="nb_sourcemanualApp">&quot;Anwendung: &quot;</string>
+    <string name="nb_sourcemanualApp_None">&quot;Klicke hier um auszuwählen&quot;</string>
+    <string name="sourcenotchosen">&quot;Sie müssen eine Quelle wählen!&quot;</string>
+    <string name="nb_loadingtit">&quot;Es wird geladen&#8230;&quot;</string>
+    <string name="nb_loadinginfo">&quot;Die Liste der installierten Anwendungen wird geladen, bitte warten&#8230;&quot;</string>   
+
+    <string name="ncf_header">&quot;Erstelle eine neue Konferenz &quot;</string>
+    <string name="ncf_name">&quot;Name &quot;</string>
+    <string name="ncf_year">&quot;Wähle das Startdatum aus &quot;</string>
+    <string name="ncf_location">&quot;Ort &quot;</string>
+    <string name="ncf_topics">&quot;Themen &quot;</string>
+    <string name="ncf_comment">&quot;Kommentare &quot;</string>
+    <string name="ncf_poster">&quot;Zeige in Postern &quot;</string>
+    <string name="ncf_poster_text">&quot;Wähle aus um diese Konferenz in der Liste für die Poster anzuzeigen&quot;</string>
+    <string name="ncf_contacts">&quot;Zeige in Kontakten &quot;</string>
+    <string name="ncf_contacts_text">&quot;Wähle aus um diese Konferenz in der Liste für die Kontakte anzuzeigen&quot;</string>
+    <string name="ncf_name_hint">&quot;Name &quot;</string>
+    <string name="ncf_location_hint">&quot;Findet statt in &quot;</string>
+    <string name="ncf_topics_hint">&quot;Wähle ein Thema &quot;</string>
+    <string name="ncf_comment_hint">&quot;Kommentare &quot;</string>
+
+    <string name="ecf_header">&quot;Bearbeite die Konferenz &quot;</string> 
+    
+    <string name="cfv_date">&quot;Datum: &quot;</string>
+    <string name="cfv_location">&quot;Ort: &quot;</string>
+    <string name="cfv_topics">&quot;Themen: &quot;</string>
+    <string name="cfv_comment">&quot;Kommentare: &quot;</string>
+    <string name="cfv_poster">&quot;Poster &quot;</string>
+    <string name="cfv_contacts">&quot;Kontakte &quot;</string>
+    <string name="cfv_savepath">&quot;Ordner: &quot;</string>
+    <string name="cfv_items">&quot; Einträge  &quot;</string>
+        
+	<string name="custompref_header">&quot;Ordner und sync Einstellungen&quot;</string>
+    <string name="custompref_extern">&quot;Externes Speichergerät&quot;</string>
+    <string name="custompref_extern_text">&quot;Auswählen um die Einträge auf einem externen Gerät z.B. SD-Karte zu speichern.&quot;</string>
+    <string name="custompref_savepath">&quot;Speicherpfad&quot;</string>
+    <string name="custompref_savepath_hint">&quot;Jeder erstellte Eintrag wird in diesem Ordner gespeichert.&quot;</string>
+    
+    <string name="npo_header">&quot;Erstelle ein neues Poster &quot;</string>
+    <string name="npo_name">&quot;Enter mainauthors name &quot;</string>
+    <string name="npo_name_hint">&quot;Vorname Nachname&quot;</string>
+    <string name="npo_coauthor">&quot;Enter coauthors &quot;</string>
+    <string name="npo_coauthor_hint">&quot;... &quot;</string>
+    <string name="npo_title">&quot;Enter title &quot;</string>
+    <string name="npo_title_hint">&quot;... &quot;</string>
+    <string name="npo_image">&quot;Get image&quot;</string>
+    <string name="npo_image_camera">&quot;Take picture&quot;</string>
+    <string name="npo_image_file">&quot; Select file &quot;</string>
+    <string name="npo_abstract">&quot;Enter abstract &quot;</string>
+    <string name="npo_abstract_hint">&quot;... &quot;</string>
+    <string name="npo_references">&quot;Enter references &quot;</string>
+    <string name="npo_references_hint">&quot;... &quot;</string>
+    
+    <string name="pv_header">&quot; Poster von &quot;</string>
+    <string name="cv_header">&quot; Kontakte von &quot;</string>
+    
+    
+    <string name="search_label">&quot;Suche&quot;</string>
+    <string name="search_hint">&quot;"Search in your_application_name"&quot;</string>
+    <string name="search_message">&quot;"Eingabe des Suchtextes:"&quot;</string>
+    
+    <string name="ok">"OK"</string>
+    <string name="cancel">"Abbruch"</string>
+    <string name="fnf">"Datei nicht gefunden!"</string>
+    <string name="alert">"Achtung"</string>
+    <string name="none">Nichts</string>
+        
+    <string name="eb_header">&quot;Bearbeite Bibliothek&quot;</string>
+    <string name="eb_backp_warn1">&quot;Hintergrundbild für &quot;</string>
+    <string name="eb_backp_warn2">&quot;" ist nicht verfügbar!"&quot;</string>
+    <string name="eb_select_pic">&quot;Wähle Hintergrundbild&quot;</string>
+    <string name="eb_deselect_pic">&quot;Langer Klick um das Bild abzuwählen&quot;</string>
+    
+    <string name="main_bib_addfirst">"Füge neue Bibliothek hinzu"</string>
+    <string name="main_bib_hint">Um eine neue Bibtex Datei hinzu zu fügen:\n    Menü -> Neu -> Fülle Formular aus</string>
+    <string name="main_bib_header">&quot; Deine Bibliotheken:&quot;</string>
+    
+    <string name="main_conf_addfirst">"Füge neue Konferenz hinzu"</string>
+    <string name="main_conf_hint">Um eine neue Konferenz hinzu zu fügen:\n    Menü -> Neu -> Fülle Formular aus</string>
+    <string name="main_conf_header">&quot; Deine Konferenzen:&quot;</string>
+    
+    <string name="main_settings">&quot;Ordner und Sync Einstellungen&quot;</string>
+    <string name="main_settingsmessg">&quot;Dies ist der erste Eintrag, den du erstellen möchtets. Deshalb müssen zuerst noch ein paar generelle Einstellungen gesetzt werden.&quot;</string>
+    
+    <string name="main_my_addfirst">"Füge neuen Eintrag hinzu"</string>
+    <string name="main_my_hint">In Vorbereitung</string>
+    <string name="main_my_header">&quot; Deine Einträge:&quot;</string>
+
+    <string name="main_menu_profile">Profil</string>
+    <string name="main_menu_new">Neu</string>
+    <string name="main_menu_deleteall">Lösche alle</string>
+    <string name="main_menu_preferences">Einstellungen</string>
+    <string name="main_menu_about">Info/über</string>
+    <string name="main_delete">Lösche</string>
+    <string name="main_deletemessg">&quot;Sollen alle Bibliotheken gelöscht werden?&quot;</string>
+    <string name="max_bibs_warn">Maximale Anzahl an Bibliotheken erreicht!</string>
+
+    <string name="app_not_found">Gewählte Anwendung wurde nicht gefunden!</string>
+    
+    
+    <string name="about_homepage">"Homepage"</string>
+    <string name="about_main1">&quot;Diese Applikation ist gedacht um bibtex-Dateien, die mit der Freeware Jabref erstellt wurden, anzuschauen, jedoch nicht für Bearbeitungszwecke - zumindestens bisher.\r\nSofern diese zur Verfügung stehen, kann auch direkt auf das zugehörige PDF zugegriffen werden.\nZur gleichen Zeit können viele verschiedene Bibliotheken verwaltet werden, dabei kann jeder in der Übersicht ein spezielles Aussehen zugeordnet werden. Dafür kann man einen der vordefiniereten Hintergrundbilder nutzen, oder sich selbst einen erstellen. Beispiele und Vorlagen dafür finden sie auf meiner &quot;</string>
+    <string name="about_main2">&quot;.\nAuch Such- und Sortierungsmöglichkeiten wurden eingebaut, sodass Sie die Darstellung ihren Bedürfnissen anpassen können.\nDie Applikation wurde auf verschiedenen Geräten getestet und funktioniert bestens ab Android 2.2 sowohl auf Smartphones als auch auf Tablets.\n\nZukünftige Versionen werden Synchronisierungsmöglichkeiten für die Bibliotheken via svn, git, cloud etc beinhalten.\nFür Funktionenanfragen oder Fehler besuchen Sie bitte meine Homepage oder senden Sie eine Email an   \n\nIch hoffe diese Anwendung erweist sich als nützlich für Ihre tägliche Forschung.&quot;</string>
+    <string name="about_disc">"Disclaimer: Ich stehe in keiner Verbindung zu Jabref oder den auftretenen Journalen.\nDiese Applikation wird entwickelt und unterhalten von Johannes Reim."</string>
+  
+    
+    
+    <string name="mcm_edititem">Bearbeite</string>
+    <string name="mcm_deleteitem">Lösche</string>
+    <string name="mcm_syncbibtex">Sync: Bibtexdatei</string>
+    <string name="mcm_syncfull">Sync: Vollständig</string>
+    <string name="mcm_unlink">Sync: Trennen</string>
+    <string name="mcm_syncmanualapp">Sync: </string>
+     
+    <string name="pref_general">Allgemein</string>
+    <string name="pref_language">Wähle Sprache</string>
+    <string name="pref_language_sum">Verändert die Lokalisierung für diese Anwendung.</string>
+    <string name="pref_language_warn">&quot;Bitte starten sie die Anwendung neu um die Umstellung der Lokalisierung ab zu schließen&quot;</string>
+    <string name="pref_systemapps">Verstecke Systemanwendungen</string>
+    <string name="pref_systemapps_sum">Auswählen um vorinstallierte Anwendungen in der Auswahlliste für die Synchronisierung zu verbergen.</string>
+    <string name="pref_graphics">Graphik</string>
+    <string name="pref_splash">&quot;Startbildschirm&quot;</string>
+    <string name="pref_splash_sum">&quot;Wähle aus um den Startbildschirm bei Anwendungsstart anzuzeigen.&quot;</string>
+    <string name="pref_backpic">&quot;Hintergrundbilder&quot;</string>
+    <string name="pref_backpic_sum">&quot;Wähle aus um die Hintergrundbilder für die Bibliotheken zu aktiviere.&quot;</string>
+	<string name="pref_colortheme">&quot;Wähle ein Farbthema&quot;</string>
+	<string name="pref_colortheme_sum">&quot;Globales Farbthema.&quot;</string>
+	<string name="pref_highrows">&quot;Zeilen hervorheben&quot;</string>
+	<string name="pref_highrows_sum">&quot;Wähle aus um verschiedenfarbige Zeilen in der Bibliotheksansicht zu aktivieren.&quot;</string>
+	<string name="pref_bibview">&quot;Bibliotheksansicht&quot;</string>
+	<string name="pref_textsize">&quot;Automatische Textgröße&quot;</string>
+	<string name="pref_textsize_sum">&quot;Wähle aus um die automatische Anpassung der Textgröße zu aktivieren.&quot;</string>
+	<string name="pref_textsizeman">&quot;Wähle die Textgröße&quot;</string>
+	<string name="pref_textsizeman_sum">&quot;für den text in der Bibliotheksansicht&quot;</string>
+	<string name="pref_textsizecurrent">&quot;aktuelle Textgröße: &quot;</string>
+	<string name="pref_headertextsize">&quot;Wähle Textgröße der Titelleiste&quot;</string>
+    <string name="pref_headertextsize_sum">&quot;Die Textgröße wird um den gewählten Wert größer dargestellt.&quot;</string>
+	<string name="pref_sortsearch">&quot;Speichere Sortierung und Suche&quot;</string>
+	<string name="pref_sortsearch_sum">&quot;Wähle aus um die aktuelle Sortierung und Suche zu speichern.&quot;</string>
+	<string name="pref_bibwidth">&quot;Wähle Breite der Ansicht&quot;</string>
+    <string name="pref_bibwidth_sum">&quot;Stelle ein wieviel Prozent größer die Breite der Ansicht im Vergleich zur Bildschirmbreite ist.&quot;</string>
+	<string name="pref_detailview">&quot;Detail Ansicht&quot;</string>	
+	<string name="pref_pdffile">&quot;Zeige den Dateinamen des PDFs an&quot;</string>
+	<string name="pref_pdffile_sum">&quot;Wähle aus um den Dateinamen des PDFs in der Detailansicht anzuzeigen.&quot;</string>
+	<string name="pref_doilink">&quot;Zeige DOI Link&quot;</string>
+	<string name="pref_doilink_sum">&quot;Wähle aus um den doi Link in der Detailansicht anzuzeigen.&quot;</string>
+	
+	<string name="dropb_notlinked">&quot;Diese Bibliothek ist nicht mit Dropbox verbunden!&quot;</string>
+    <string name="dropb_status_linked">&quot;Status: verbunden&quot;</string>
+    <string name="dropb_status_unlinked">&quot;Status: getrennt&quot;</string>
+    <string name="dropb_error_appkey">&quot;Die Anwendung oder der geheime Schlüssel ist beschädigt, bitte melden Sie diesen Fehler auf der Homepage!&quot;</string>
+    <string name="dropb_error_authen">&quot;Konnte nicht mit Dropbox authentifiziert werden:&quot;</string>
+    <string name="dropb_downloading">&quot;"Läd herunter &#8230;"&quot;</string>
+    <string name="dropb_collfiles">&quot;"sammelt Dateien"&quot;</string>
+    <string name="dropb_error_canceled">&quot;Abgebrochen&quot;</string>
+    <string name="dropb_error_notdir">&quot; ist kein Verzeichnis."&quot;</string>
+    <string name="dropb_error_dirempty">&quot;Das Dropbox Verzeichnis ist leer.&quot;</string>
+    <string name="dropb_error_uptodate">&quot;Keine veränderten oder neuen Dateien in diesem Verzeichnis&quot;</string>
+    <string name="dropb_error_dirnotvalid">&quot;Bitte geben Sie ein gültiges lokales Verzeichnis an&quot;</string>
+    <string name="dropb_error_couldnotcreate">&quot;"Es konnte keine lokale Datei erstellt werden um die aktuelle Datei zu speichern"&quot;</string>
+    <string name="dropb_error_downcanc">&quot;"Download abgebrochen"&quot;</string>
+    <string name="dropb_error_foldercreated">&quot;"Verzeichnis wurde erstellt, füllen Sie dieses bitte mit der Bibtex Datei und den zugehörigen Pdfs."&quot;</string>
+    <string name="dropb_error_foldernotcreated1">&quot;"Verzeichnis "&quot;</string>
+    <string name="dropb_error_foldernotcreated2">&quot;" konnte nicht erstellt werden, bitte erstellen Sie diesen manuel im Dropboxverzeichnis der App."&quot;</string>
+    <string name="dropb_error_network">&quot;"Netzwerk Fehler.  Versuchen Sie es noch einmal."&quot;</string>
+    <string name="dropb_error_dropbox">&quot;"Dropbox Fehler.  Versuchen Sie es noch einmal."&quot;</string>
+    <string name="dropb_error_unkown">&quot;"Unbekannter Fehler.  Versuchen Sie es noch einmal."&quot;</string>
+    <string name="dropb_updated">&quot;"Bibliotheks Dateien erfolgreich aktualisiert"&quot;</string>
+    <string name="dropb_downloadingbibtex">&quot;"Läd Bibtex Datei herunter"&quot;</string>
+    <string name="dropb_error_nobibindir1">&quot;"Keine bibtex Datei "&quot;</string>
+    <string name="dropb_error_nobibindir2">&quot;" in Verzeichnis"&quot;</string>
+    <string name="dropb_error_nobibmod">&quot;"Keine veränderte oder neue bibtex Datei in diesem Verzeichnis."&quot;</string>
+    <string name="dropb_bibupdated">&quot;"Bibtex Datei erfolgreich aktualisiert"&quot;</string>
+    <string name="dropb_complete">&quot;"Download abgeschlossen"&quot;</string>
+    
+    
+    
+ 
+	
+</resources>

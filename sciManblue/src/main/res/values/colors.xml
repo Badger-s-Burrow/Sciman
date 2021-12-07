@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Color primary 500 from palette colors -->
+    <color name="primary">#FFA500</color>
+    <!--Color primary dark 700 from palette colors -->
+    <color name="primaryDark">#7F5200</color>
+    
+    <color name="secondary">#f5f5dc</color>
+    <color name="secondaryLight">#ffffff</color>
+    <color name="accent">#40e0d0</color>
+    <color name="accentLight">#b2f2ec</color>
+
+    <color name="headerColor">#7F5200</color>
+    <color name="textColor">#777777</color>
+
+    <color name="grey">#FF808080</color>
+    <color name="transgrey">#44C0C0C0</color>
+    <color name="sortdrawer_color">#FFAAAAAA</color>
+
+    <!-- For custom fab library-->
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#808080</color>
+    <color name="white">#fafafa</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="pink">#e91e63</color>
+    <color name="pink_pressed">#ec407a</color>
+    <color name="blue_semi_transparent">#805677fc</color>
+    <color name="blue_semi_transparent_pressed">#80738ffe</color>
+
+    <color name="iron">#CCCCCC</color>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <de.badgersburrow.sciman.library.SlidebarPreference
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:key="prefTextSize"
+        android:title="Set text size"
+        android:summary="for all regular text"
+        android:dialogMessage="Text size"
+        android:defaultValue="10"
+        android:text=" px"
+        android:max="40"/>

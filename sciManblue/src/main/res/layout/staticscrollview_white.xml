@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    		  android:id="@+id/wrap_for_search"
+	              android:layout_width="fill_parent" 
+	              android:layout_height="fill_parent">
+<de.badgersburrow.sciman.library.HScroll
+    android:id="@+id/hScroll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout android:layout_width="fill_parent" 
+	              android:layout_height="fill_parent">
+<de.badgersburrow.sciman.library.ScrollingTable
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:layout_height="wrap_content">
+    <TableLayout android:layout_height="12dp"
+        android:layout_width="match_parent"
+        android:id="@+id/HeaderTable">
+        <TableRow android:layout_height="match_parent"
+        android:layout_width="wrap_content">
+            <RelativeLayout 
+	    		  android:id="@+id/header_rl_author"
+	              android:layout_width="fill_parent" 
+	              android:layout_height="fill_parent">
+	              <TextView 
+	    		      android:layout_width="fill_parent" 
+	              android:layout_height="wrap_content"
+		        android:id="@+id/header_author_btn"
+		        android:clickable="true"
+		        android:background="@android:drawable/list_selector_background"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"/>
+	    		  <TextView 
+	    		      android:layout_width="wrap_content" 
+	              android:layout_height="wrap_content"
+	              android:singleLine="true"
+		        android:id="@+id/header_author"
+                android:text="@string/header_author" />
+	    		  
+	              
+    		
+			</RelativeLayout>
+		    <RelativeLayout 
+	    		  android:id="@+id/header_rl_title"
+	              android:layout_width="fill_parent" 
+	              android:layout_height="wrap_content">
+	    		  <TextView 
+	    		      android:layout_width="fill_parent" 
+	              android:layout_height="wrap_content"
+		        android:id="@+id/header_title_btn"
+		        android:clickable="true"
+		        android:singleLine="true"
+		        android:background="@android:drawable/list_selector_background"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:text=" "/>
+	    		 <TextView 
+	    		     android:singleLine="true"
+	    		     android:layout_width="wrap_content" 
+	              android:layout_height="wrap_content"
+		        android:id="@+id/header_title"
+                android:text="@string/header_title" />
+	              
+    		
+			</RelativeLayout>
+			<RelativeLayout 
+	    		  android:id="@+id/header_rl_year"
+	              android:layout_width="fill_parent" 
+	              android:layout_height="wrap_content">
+	    		 <TextView 
+	    		      android:layout_width="fill_parent" 
+	              android:layout_height="wrap_content"
+		        android:id="@+id/header_year_btn"
+		        android:clickable="true"
+		        android:singleLine="true"
+		        android:background="@android:drawable/list_selector_background"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:text=" "/>
+	    		  <TextView 
+	    		      android:layout_width="wrap_content" 
+	              android:layout_height="wrap_content"
+	              android:singleLine="true"
+		        android:id="@+id/header_year"
+                android:text="@string/header_year" />
+	              
+    		
+			</RelativeLayout>
+			<RelativeLayout 
+	    		  android:id="@+id/header_rl_journal"
+	              android:layout_width="fill_parent" 
+	              android:layout_height="wrap_content">
+	    		  <TextView 
+	    		      android:layout_width="fill_parent" 
+	              android:layout_height="wrap_content"
+		        android:id="@+id/header_journal_btn"
+		        android:clickable="true"
+		        android:singleLine="true"
+		        android:background="@android:drawable/list_selector_background"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:text=" "/>
+	    		  <TextView 
+	    		      android:layout_width="wrap_content" 
+	              android:layout_height="wrap_content"
+	              android:singleLine="true"
+		        android:id="@+id/header_journal"
+                android:text="@string/header_journal" />
+	              
+    		
+			</RelativeLayout>
+			<RelativeLayout 
+	    		  android:id="@+id/header_rl_timestamp"
+	              android:layout_width="fill_parent" 
+	              android:layout_height="wrap_content">
+	    		  <TextView 
+	    		      android:layout_width="fill_parent" 
+	              android:layout_height="wrap_content"
+		        android:id="@+id/header_timestamp_btn"
+		        android:clickable="true"
+		        android:singleLine="true"
+		        android:background="@android:drawable/list_selector_background"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:text=" "/>
+	    		  <TextView 
+	    		      android:layout_width="wrap_content" 
+	              android:layout_height="wrap_content"
+	              android:singleLine="true"
+		        android:id="@+id/header_timestamp"
+                android:text="@string/header_timestamp" />
+	              
+    		
+			</RelativeLayout>
+			<RelativeLayout 
+	    		  android:id="@+id/header_rl_bibtexkey"
+	              android:layout_width="fill_parent" 
+	              android:layout_height="wrap_content">
+	    		  <TextView 
+	    		      android:layout_width="fill_parent" 
+	              android:layout_height="wrap_content"
+		        android:id="@+id/header_bibtexkey_btn"
+		        android:clickable="true"
+		        android:singleLine="true"
+		        android:background="@android:drawable/list_selector_background"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:text=" "/>
+	    		  <TextView 
+	    		      android:layout_width="wrap_content" 
+	              android:layout_height="wrap_content"
+	              android:singleLine="true"
+		        android:id="@+id/header_bibtexkey"
+                android:text="@string/header_bibtexkey" />
+	              
+    		
+			</RelativeLayout>
+            
+        </TableRow>
+    </TableLayout>
+    <View android:background="#000000" android:layout_width = "fill_parent" android:layout_height="1dip" />	
+    <ScrollView android:id="@+id/vScroll"
+    	android:layout_width="fill_parent"
+    	android:layout_height="match_parent"
+    	android:fillViewport="false">
+        <TableLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/BodyTable">
+            
+        </TableLayout>
+        
+    </ScrollView>
+    <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+			<TextView
+			    android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content"
+	            
+	            android:layout_marginLeft="20dp"
+		        android:id="@+id/tv_noitem"
+                
+			    />		
+         </RelativeLayout>
+</de.badgersburrow.sciman.library.ScrollingTable>
+
+	</LinearLayout>   
+
+</de.badgersburrow.sciman.library.HScroll>
+
+<ImageButton
+    android:id="@+id/search_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="5dp"
+    android:clickable="true"
+    android:background="@drawable/search_selector"
+    android:src="@drawable/search_2" 
+    android:contentDescription="search"/>
+
+<TextView
+    android:id="@+id/search_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toLeftOf="@+id/search_button"
+    android:layout_alignTop="@+id/search_button"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="5dp"
+    android:text=""
+    android:clickable="true"
+    android:background="@drawable/search_text_selector"    
+    />
+
+</RelativeLayout>

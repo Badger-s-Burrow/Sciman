@@ -1,0 +1,7 @@
+/sciManblue/build/
+/sciManblue/sciManblue-release.apk
+/.gradle/
+/.idea/
+/build/intermediates/
+/local.properties
+/androidKey.jks
