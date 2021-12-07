@@ -10,8 +10,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.gson.Gson;
+
+
 import de.badgersburrow.sciman.R;
+import de.badgersburrow.sciman.databinding.ActivitySignupBinding;
 import de.badgersburrow.sciman.objects.User;
 import de.badgersburrow.sciman.objects.WebsocketRequest;
 import de.badgersburrow.sciman.objects.WebsocketReturn;
@@ -19,7 +24,6 @@ import de.badgersburrow.sciman.utilities.VariousMethods;
 
 import java.util.ArrayList;
 
-import butterknife.ButterKnife;
 import de.tavendo.autobahn.WebSocketConnection;
 import de.tavendo.autobahn.WebSocketException;
 import de.tavendo.autobahn.WebSocketHandler;
@@ -29,27 +33,26 @@ public class SignupActivity extends AppCompatActivity {
     private final static WebSocketConnection mConnection = new WebSocketConnection();
     ProgressDialog progressDialog = null;
 
-    @InjectView(R.id.input_name) EditText _nameText;
-    @InjectView(R.id.input_email) EditText _emailText;
-    @InjectView(R.id.input_password) EditText _passwordText;
-    @InjectView(R.id.input_passwordconfirm) EditText _passwordConfirm;
-    @InjectView(R.id.btn_signup) Button _signupButton;
-    @InjectView(R.id.link_login) TextView _loginLink;
+    private ActivitySignupBinding binding;
+
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup);
-        ButterKnife.inject(this);
 
-        _signupButton.setOnClickListener(new View.OnClickListener() {
+        binding = ActivitySignupBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        setContentView(view);
+
+        binding.btnSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 signup();
             }
         });
 
-        _loginLink.setOnClickListener(new View.OnClickListener() {
+        binding.linkLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Finish the registration screen and return to the Login activity
@@ -66,7 +69,7 @@ public class SignupActivity extends AppCompatActivity {
             return;
         }
 
-        _signupButton.setEnabled(false);
+        binding.btnSignup.setEnabled(false);
 
         progressDialog = new ProgressDialog(SignupActivity.this,
                 R.style.Base_Theme_AppCompat_Dialog);
@@ -74,9 +77,9 @@ public class SignupActivity extends AppCompatActivity {
         progressDialog.setMessage("Creating Account...");
         progressDialog.show();
 
-        String name = _nameText.getText().toString();
-        String email = _emailText.getText().toString();
-        String password = _passwordText.getText().toString();
+        String name = binding.inputName.getText().toString();
+        String email = binding.inputEmail.getText().toString();
+        String password = binding.inputPassword.getText().toString();
 
 
         String passwordHash = VariousMethods.computeSHAHash(MainActivity.passwdSecret + password);
@@ -90,7 +93,7 @@ public class SignupActivity extends AppCompatActivity {
 
     public void onSignupSuccess() {
         progressDialog.dismiss();
-        _signupButton.setEnabled(true);
+        binding.btnSignup.setEnabled(true);
         setResult(RESULT_OK, null);
         finish();
     }
@@ -115,45 +118,43 @@ public class SignupActivity extends AppCompatActivity {
                 Toast.makeText(getBaseContext(), "Signup failed: Unkown error occured", Toast.LENGTH_LONG).show();
             }
         }
-
-
-        _signupButton.setEnabled(true);
+        binding.btnSignup.setEnabled(true);
     }
 
     public boolean validate() {
         boolean valid = true;
 
-        String name = _nameText.getText().toString();
-        String email = _emailText.getText().toString();
-        String password = _passwordText.getText().toString();
-        String passwordConfirm = _passwordConfirm.getText().toString();
+        String name = binding.inputName.getText().toString();
+        String email = binding.inputEmail.getText().toString();
+        String password = binding.inputPassword.getText().toString();
+        String passwordConfirm = binding.inputPasswordconfirm.getText().toString();
 
         if (name.isEmpty() || name.length() < 3) {
-            _nameText.setError("at least 3 characters");
+            binding.inputName.setError("at least 3 characters");
             valid = false;
         } else {
-            _nameText.setError(null);
+            binding.inputName.setError(null);
         }
 
         if (email.isEmpty() || !android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            _emailText.setError("enter a valid email address");
+            binding.inputEmail.setError("enter a valid email address");
             valid = false;
         } else {
-            _emailText.setError(null);
+            binding.inputEmail.setError(null);
         }
 
         if (password.isEmpty() || password.length() < 4 || password.length() > 10) {
-            _passwordText.setError("between 4 and 10 alphanumeric characters");
+            binding.inputPassword.setError("between 4 and 10 alphanumeric characters");
             valid = false;
         } else {
-            _passwordText.setError(null);
+            binding.inputPassword.setError(null);
         }
 
         if (!passwordConfirm.equals(password)) {
-            _passwordConfirm.setError("password does not match");
+            binding.inputPasswordconfirm.setError("password does not match");
             valid = false;
         } else {
-            _passwordConfirm.setError(null);
+            binding.inputPasswordconfirm.setError(null);
         }
 
         return valid;

@@ -12,8 +12,12 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.gson.Gson;
+
 import de.badgersburrow.sciman.R;
+import de.badgersburrow.sciman.databinding.ActivityLoginBinding;
 import de.badgersburrow.sciman.objects.User;
 import de.badgersburrow.sciman.objects.WebsocketReturn;
 import de.badgersburrow.sciman.objects.WebsocketRequest;
@@ -21,7 +25,6 @@ import de.badgersburrow.sciman.utilities.VariousMethods;
 
 import java.util.ArrayList;
 
-import butterknife.ButterKnife;
 import de.tavendo.autobahn.WebSocketConnection;
 import de.tavendo.autobahn.WebSocketException;
 import de.tavendo.autobahn.WebSocketHandler;
@@ -40,19 +43,17 @@ public class LoginActivity extends AppCompatActivity {
 
     ProgressDialog progressDialog = null;
 
-    @InjectView(R.id.input_email) EditText _emailText;
-    @InjectView(R.id.input_password) EditText _passwordText;
-    @InjectView(R.id.btn_login) Button _loginButton;
-    @InjectView(R.id.link_signup) TextView _signupLink;
-    @InjectView(R.id.btn_proceed) Button _proceedButton;
+    private ActivityLoginBinding binding;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-        ButterKnife.inject(this);
 
-        _loginButton.setOnClickListener(new View.OnClickListener() {
+        binding = ActivityLoginBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        setContentView(view);
+
+        binding.btnLogin.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -60,7 +61,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        _signupLink.setOnClickListener(new View.OnClickListener() {
+        binding.linkSignup.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -70,7 +71,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        _proceedButton.setOnClickListener(new View.OnClickListener() {
+        binding.btnProceed.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -93,11 +94,11 @@ public class LoginActivity extends AppCompatActivity {
         progressDialog.setMessage("Authenticating...");
         progressDialog.show();
 
-        _loginButton.setEnabled(false);
+        binding.btnLogin.setEnabled(false);
 
 
-        String email = _emailText.getText().toString();
-        String password = _passwordText.getText().toString();
+        String email = binding.inputEmail.getText().toString();
+        String password = binding.inputPassword.getText().toString();
 
         // TODO: Implement your own authentication logic here.
 
@@ -122,6 +123,7 @@ public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == REQUEST_SIGNUP) {
             if (resultCode == RESULT_OK) {
 
@@ -130,6 +132,7 @@ public class LoginActivity extends AppCompatActivity {
                 this.finish();
             }
         }
+
     }
 
     @Override
@@ -140,7 +143,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void onLoginSuccess() {
         progressDialog.dismiss();
-        _loginButton.setEnabled(true);
+        binding.btnLogin.setEnabled(true);
         finish();
     }
 
@@ -166,27 +169,27 @@ public class LoginActivity extends AppCompatActivity {
             }
         }
 
-        _loginButton.setEnabled(true);
+        binding.btnLogin.setEnabled(true);
     }
 
     public boolean validate() {
         boolean valid = true;
 
-        String email = _emailText.getText().toString();
-        String password = _passwordText.getText().toString();
+        String email = binding.inputEmail.getText().toString();
+        String password = binding.inputPassword.getText().toString();
 
         if (email.isEmpty() || !android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            _emailText.setError("enter a valid email address");
+            binding.inputEmail.setError("enter a valid email address");
             valid = false;
         } else {
-            _emailText.setError(null);
+            binding.inputEmail.setError(null);
         }
 
         if (password.isEmpty() || password.length() < 4 || password.length() > 10) {
-            _passwordText.setError("between 4 and 10 alphanumeric characters");
+            binding.inputPassword.setError("between 4 and 10 alphanumeric characters");
             valid = false;
         } else {
-            _passwordText.setError(null);
+            binding.inputPassword.setError(null);
         }
 
         return valid;

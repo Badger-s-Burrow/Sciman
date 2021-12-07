@@ -8,6 +8,9 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.RecyclerView;
+
 import de.badgersburrow.sciman.R;
 import de.badgersburrow.sciman.objects.News;
 import de.badgersburrow.sciman.utilities.VariousMethods;

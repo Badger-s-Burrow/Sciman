@@ -2,7 +2,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
-    <group >
         <item
             android:id="@+id/cf_nav_sciman"
             android:checked="false"
@@ -61,6 +60,5 @@
             android:icon="@drawable/information"
             android:title="@string/cf_nav_impressum" />
 
-    </group>
     </group>
 </menu>

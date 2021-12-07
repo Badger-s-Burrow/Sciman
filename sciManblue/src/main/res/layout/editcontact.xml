@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".NewPosterActivity" >
+    tools:context=".conftab.ContactEditActivity" >
 
     <ScrollView
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -304,12 +304,11 @@
                 
                		</LinearLayout>
                 
-                        <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
                 <ImageView
                     android:id="@+id/iv_list"
-                    android:layout_toRightOf="@+id/tv_topicsph"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="5dp"
                     android:layout_marginLeft="5dp"
@@ -327,9 +326,7 @@
                     android:layout_toLeftOf="@+id/iv_addtopic"                                        
                     android:hint="@string/ncf_topics_hint"
                     android:imeOptions="actionNext"
-                    android:singleLine="true" >
-
-                </EditText>
+                    android:singleLine="true" />
 
                 <ImageView
                     android:id="@+id/iv_addtopic"

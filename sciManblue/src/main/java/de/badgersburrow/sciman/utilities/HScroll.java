@@ -33,21 +33,34 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.widget.HorizontalScrollView;
-import android.widget.ImageView;
 
-public class PictureLink extends androidx.appcompat.widget.AppCompatImageView {
-private int rownumber;
+public class HScroll extends HorizontalScrollView {
+private float xDistance, yDistance, lastX, lastY;
 
-public PictureLink(Context context, AttributeSet attrs) {
+public HScroll(Context context, AttributeSet attrs) {
     super(context, attrs);
 }
 
-public void setRownumber(int Rownumber){
-	rownumber=Rownumber;
-}
+@Override
+public boolean onInterceptTouchEvent(MotionEvent ev) {
+    switch (ev.getAction()) {
+        case MotionEvent.ACTION_DOWN:
+            xDistance = yDistance = 0f;
+            lastX = ev.getX();
+            lastY = ev.getY();
+            break;
+        case MotionEvent.ACTION_MOVE:
+            final float curX = ev.getX();
+            final float curY = ev.getY();
+            xDistance += Math.abs(curX - lastX);
+            yDistance += Math.abs(curY - lastY);
+            lastX = curX;
+            lastY = curY;
+            if(yDistance > xDistance)
+                return false;
+    } 
 
-public int getRownumber(){
-	return rownumber;
+    return super.onInterceptTouchEvent(ev);
 }
 }
 

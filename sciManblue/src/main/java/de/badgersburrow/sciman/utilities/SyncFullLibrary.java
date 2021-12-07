@@ -94,7 +94,7 @@ public class SyncFullLibrary extends AsyncTask<Void, Long, Boolean> {
     
     //for the test
     private NotificationManager mNotifyManager;
-    private Builder mBuilder;
+    private NotificationCompat.Builder mBuilder;
     private static final String TAG = "MyActivity";
     final int downloadId = 2;
 

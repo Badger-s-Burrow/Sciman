@@ -5,7 +5,7 @@
 	android:id="@+id/wrap_for_search"
       android:layout_width="fill_parent" 
       android:layout_height="fill_parent">
-<de.badgersburrow.sciman.library.HScroll
+<de.badgersburrow.sciman.utilities.HScroll
     android:id="@+id/hScroll"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -13,7 +13,7 @@
     android:fillViewport="true">
 <LinearLayout android:layout_width="fill_parent" 
 	              android:layout_height="fill_parent">
-<de.badgersburrow.sciman.library.ScrollingTable
+<de.badgersburrow.sciman.utilities.ScrollingTable
     android:layout_width="wrap_content"
     android:orientation="vertical"
     android:layout_weight="1"
@@ -164,11 +164,11 @@
                 
 			    />		
          </RelativeLayout>
-</de.badgersburrow.sciman.library.ScrollingTable>
+</de.badgersburrow.sciman.utilities.ScrollingTable>
 
 	</LinearLayout>   
 
-</de.badgersburrow.sciman.library.HScroll>
+</de.badgersburrow.sciman.utilities.HScroll>
 
 
 </RelativeLayout>

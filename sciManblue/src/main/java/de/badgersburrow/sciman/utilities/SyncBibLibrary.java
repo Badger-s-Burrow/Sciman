@@ -44,10 +44,10 @@ import android.content.DialogInterface.OnClickListener;
 import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.os.Environment;
-import android.support.v4.app.NotificationCompat;
-import android.support.v4.app.NotificationCompat.Builder;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import androidx.core.app.NotificationCompat;
 
 import com.dropbox.client2.DropboxAPI;
 import com.dropbox.client2.ProgressListener;
@@ -89,7 +89,7 @@ public class SyncBibLibrary extends AsyncTask<Void, Long, Boolean> {
     
     // for notification
     private NotificationManager mNotifyManager;
-    private Builder mBuilder;
+    private NotificationCompat.Builder mBuilder;
     private static final String TAG = "MyActivity";
     final int downloadId = 1;
     

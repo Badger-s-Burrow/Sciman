@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <item android:id="@+id/ClearRecent" 
-        android:title="@string/mcm_clearecent"></item>
+        android:title="@string/mcm_clearecent"/>
     
 
 </menu>

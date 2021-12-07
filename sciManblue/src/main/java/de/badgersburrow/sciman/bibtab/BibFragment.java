@@ -59,6 +59,9 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 
 public class BibFragment extends Fragment implements FragmentUpdate

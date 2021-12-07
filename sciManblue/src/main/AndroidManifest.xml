@@ -3,10 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="de.badgersburrow.sciman">
 
-    <uses-sdk
-        android:minSdkVersion="16"
-        android:targetSdkVersion="31" />
-
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 	<uses-permission android:name="android.permission.CAMERA" />
@@ -67,24 +63,24 @@
             android:parentActivityName="de.badgersburrow.sciman.main.MainActivity">
         </activity>
         <activity android:name="de.badgersburrow.sciman.conftab.ConfSelectActivity"
-            android:label="@string/ncf_select_header"
+            android:label="@string/ncf_header_online"
             android:parentActivityName="de.badgersburrow.sciman.main.MainActivity">
         </activity>
         <activity android:name="de.badgersburrow.sciman.conftab.ConfEditActivity"
             android:label="@string/ecf_header"
             android:parentActivityName="de.badgersburrow.sciman.main.MainActivity">
         </activity>
-        <activity android:name="de.badgersburrow.sciman.conftab.ContactViewActivity"></activity>
+        <activity android:name="de.badgersburrow.sciman.conftab.ContactViewActivity"/>
         <activity android:name="de.badgersburrow.sciman.conftab.ConfViewActivity"
             android:parentActivityName="de.badgersburrow.sciman.main.MainActivity">
         </activity>
 
-        <activity android:name="de.badgersburrow.sciman.conftab.PosterViewActivity"></activity>
-        <activity android:name="de.badgersburrow.sciman.conftab.PosterNewActivity"></activity>
-        <activity android:name="de.badgersburrow.sciman.conftab.PosterEditActivity"></activity>
-        <activity android:name="de.badgersburrow.sciman.conftab.PosterDetailedViewActivity"></activity>
-        <activity android:name="de.badgersburrow.sciman.conftab.ContactNewActivity"></activity>
-        <activity android:name="de.badgersburrow.sciman.conftab.ContactEditActivity"></activity>
+        <activity android:name="de.badgersburrow.sciman.conftab.PosterViewActivity"/>
+        <activity android:name="de.badgersburrow.sciman.conftab.PosterNewActivity"/>
+        <activity android:name="de.badgersburrow.sciman.conftab.PosterEditActivity"/>
+        <activity android:name="de.badgersburrow.sciman.conftab.PosterDetailedViewActivity"/>
+        <activity android:name="de.badgersburrow.sciman.conftab.ContactNewActivity"/>
+        <activity android:name="de.badgersburrow.sciman.conftab.ContactEditActivity"/>
 
 
 
@@ -97,7 +93,8 @@
         <activity
       		android:name="com.dropbox.client2.android.AuthActivity"
       		android:launchMode="singleTask"
-     		android:configChanges="orientation|keyboard">
+     		android:configChanges="orientation|keyboard"
+            android:exported="true">
 		      <intent-filter>
 		        <!-- Change this to be db- followed by your app key -->
 		        <data android:scheme="db-uf597mx4a2swh8s" />

@@ -2,7 +2,8 @@ package de.badgersburrow.sciman;
 
 import android.content.Context;
 import android.database.Cursor;
-import android.widget.SimpleCursorAdapter;
+
+import androidx.cursoradapter.widget.SimpleCursorAdapter;
 
 
 public class SuggestionSimpleCursorAdapter extends SimpleCursorAdapter

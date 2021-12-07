@@ -17,7 +17,7 @@
 		android:layout_centerVertical="true"
 		android:textColorHighlight="#656565">
 	</TextView>
-	<de.badgersburrow.sciman.library.PictureLink
+	<de.badgersburrow.sciman.utilities.PictureLink
 		android:id="@+id/iv_delete"
 		android:src="@drawable/minus_black"		
 		android:layout_centerVertical="true"

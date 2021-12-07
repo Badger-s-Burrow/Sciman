@@ -11,7 +11,6 @@ import android.graphics.PorterDuffColorFilter;
 import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.design.widget.NavigationView;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -24,11 +23,18 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-import android.support.v7.internal.view.menu.ActionMenuItemView;
 import android.widget.TextView;
 import android.widget.Toast;
-//import android.support.v4.graphics.drawable.DrawableCompat;
 import android.graphics.drawable.Drawable;
+
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.view.menu.ActionMenuItemView;
+import androidx.appcompat.widget.ActionMenuView;
+import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
+
+import com.google.android.material.navigation.NavigationView;
 
 import de.badgersburrow.sciman.PrefsActivity;
 import de.badgersburrow.sciman.objects.Conference;

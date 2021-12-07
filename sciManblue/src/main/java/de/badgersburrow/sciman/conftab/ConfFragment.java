@@ -1,5 +1,5 @@
 package de.badgersburrow.sciman.conftab;
-import android.app.Fragment;
+
 import android.content.Context;
 import android.os.Bundle;
 import com.getbase.floatingactionbutton.FloatingActionButton;
@@ -41,6 +41,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.ImageButton;
 
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -52,8 +53,7 @@ import de.tavendo.autobahn.WebSocketHandler;
 
    
 
-public class ConfFragment extends Fragment implements FragmentUpdate
-{
+public class ConfFragment extends Fragment implements FragmentUpdate{
 	View rootView = null;
 	
 	private Conference recentConf;    

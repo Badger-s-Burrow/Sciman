@@ -9,6 +9,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+
 import de.badgersburrow.sciman.FragmentUpdate;
 import de.badgersburrow.sciman.R;
 

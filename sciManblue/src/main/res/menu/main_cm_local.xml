@@ -3,9 +3,9 @@
 
     <item android:id="@+id/EditItem" 
         android:title="@string/mcm_edititem"
-        android:icon="@android:drawable/ic_menu_edit"></item>
+        android:icon="@android:drawable/ic_menu_edit"/>
     <item android:id="@+id/DeleteItem" 
         android:title="@string/mcm_deleteitem"
-        android:icon="@android:drawable/ic_menu_delete"></item>
+        android:icon="@android:drawable/ic_menu_delete"/>
 
 </menu>

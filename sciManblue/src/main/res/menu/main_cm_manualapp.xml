@@ -2,14 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <item android:id="@+id/EditItem" 
-        android:title="@string/mcm_edititem"
-        ></item>
+        android:title="@string/mcm_edititem"/>
     <item android:id="@+id/DeleteItem" 
-        android:title="@string/mcm_deleteitem"
-       ></item>
+        android:title="@string/mcm_deleteitem"/>
     <item android:id="@+id/SyncManualApp" 
-        android:title="@string/mcm_syncmanualapp"
-        ></item>
+        android:title="@string/mcm_syncmanualapp"/>
     
 
 </menu>

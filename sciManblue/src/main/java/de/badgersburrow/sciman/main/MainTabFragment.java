@@ -1,11 +1,17 @@
 package de.badgersburrow.sciman.main;
 
-import android.app.Activity;
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
+import com.google.android.material.tabs.TabLayout;
 
 import de.badgersburrow.sciman.FragmentUpdate;
 import de.badgersburrow.sciman.MyFragment;

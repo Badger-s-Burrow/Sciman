@@ -1,9 +1,12 @@
 package de.badgersburrow.sciman.main;
 
-import android.app.Fragment;
-import android.app.FragmentManager;
+
 import android.util.SparseArray;
 import android.view.ViewGroup;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
 
 public class MainTabPagerAdapter extends FragmentStatePagerAdapter {
 
@@ -12,7 +15,7 @@ public class MainTabPagerAdapter extends FragmentStatePagerAdapter {
 		 	// TODO Auto-generated constructor stub
          }
 
-		SparseArray<Fragment> registeredFragments = new SparseArray<Fragment>();      
+		SparseArray<Fragment> registeredFragments = new SparseArray<Fragment>();
  
 
      @Override

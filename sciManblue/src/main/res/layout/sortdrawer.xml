@@ -63,7 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/sortdrawer_color"
-            android:clickable="True"
+            android:clickable="true"
             android:paddingRight="@dimen/sortdrawer_radio_margin"
             android:text="a-z" />
 
@@ -72,7 +72,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/sortdrawer_color"
-            android:clickable="True"
+            android:clickable="true"
             android:text="z-a" />
 
     </LinearLayout>
@@ -98,7 +98,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/sortdrawer_color"
-            android:clickable="True"
+            android:clickable="true"
             android:paddingRight="@dimen/sortdrawer_radio_margin"
             android:text="a-z" />
 
@@ -107,7 +107,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/sortdrawer_color"
-            android:clickable="True"
+            android:clickable="true"
             android:text="z-a" />
 
     </LinearLayout>
